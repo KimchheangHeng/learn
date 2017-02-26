@@ -197,15 +197,18 @@
 					265EBA311D43BD1400B0991F = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = R6P284TSWY;
+						LastSwiftMigration = 0820;
 					};
 					265EBA451D43BD1400B0991F = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = R6P284TSWY;
+						LastSwiftMigration = 0820;
 						TestTargetID = 265EBA311D43BD1400B0991F;
 					};
 					265EBA501D43BD1400B0991F = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = R6P284TSWY;
+						LastSwiftMigration = 0820;
 						TestTargetID = 265EBA311D43BD1400B0991F;
 					};
 				};
@@ -410,6 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TGKeyboardLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -421,6 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TGKeyboardLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -432,6 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TGKeyboardLearnTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TGKeyboardLearn.app/TGKeyboardLearn";
 			};
 			name = Debug;
@@ -444,6 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TGKeyboardLearnTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TGKeyboardLearn.app/TGKeyboardLearn";
 			};
 			name = Release;
@@ -455,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TGKeyboardLearnUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = TGKeyboardLearn;
 			};
 			name = Debug;
@@ -466,6 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TGKeyboardLearnUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = TGKeyboardLearn;
 			};
 			name = Release;
@@ -489,6 +498,7 @@
 				265EBA5C1D43BD1400B0991F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		265EBA5D1D43BD1400B0991F /* Build configuration list for PBXNativeTarget "TGKeyboardLearnTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +507,7 @@
 				265EBA5F1D43BD1400B0991F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		265EBA601D43BD1400B0991F /* Build configuration list for PBXNativeTarget "TGKeyboardLearnUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +516,7 @@
 				265EBA621D43BD1400B0991F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

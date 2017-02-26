@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-let s_ScreenWidth = UIScreen.mainScreen().bounds.width
+let s_ScreenWidth = UIScreen.main.bounds.width
 
-let s_ScreenHeight = UIScreen.mainScreen().bounds.height
+let s_ScreenHeight = UIScreen.main.bounds.height
 
-let s_StatusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+let s_StatusBarHeight = UIApplication.shared.statusBarFrame.height
         
