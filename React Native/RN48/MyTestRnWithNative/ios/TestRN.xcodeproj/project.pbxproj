@@ -203,10 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2614F1171F408FC1002429A0 /* libRCTLinking.a in Frameworks */,
+				2614F11B1F408FDE002429A0 /* libReact.a in Frameworks */,
 				2614F1161F408FBC002429A0 /* libRCTImage.a in Frameworks */,
 				2614F11A1F408FD6002429A0 /* libRCTText.a in Frameworks */,
 				2614F1191F408FCE002429A0 /* libRCTWebSocket.a in Frameworks */,
-				2614F11B1F408FDE002429A0 /* libReact.a in Frameworks */,
 				2614F1181F408FC8002429A0 /* libRCTNetwork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,9 +672,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/Libraries/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -714,8 +722,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/Libraries/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -731,6 +747,10 @@
 				);
 				INFOPLIST_FILE = TestRN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TestRN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -746,6 +766,10 @@
 				);
 				INFOPLIST_FILE = TestRN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TestRN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

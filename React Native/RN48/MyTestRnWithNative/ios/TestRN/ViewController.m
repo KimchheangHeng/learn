@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+//#import "RCTRootView.h"
+//#import "RCTBundleURLProvider.h"
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
@@ -24,7 +26,7 @@
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
     
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                        moduleName:@"Bananas"
+                                                        moduleName:@"MyTestRnWithNative"
                                                  initialProperties:nil
                                                      launchOptions:nil];
     rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
