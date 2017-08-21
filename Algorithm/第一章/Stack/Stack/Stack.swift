@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class stack <T > {
+class Stack <T > {
     var array:[T]!
     
     init() {
