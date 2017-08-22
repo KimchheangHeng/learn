@@ -1,0 +1,11 @@
+framework module HHTool {
+  umbrella header "HHTool.h"
+
+  export *
+  module * { export * }
+}
+
+module HHTool.Swift {
+    header "HHTool-Swift.h"
+    requires objc
+}

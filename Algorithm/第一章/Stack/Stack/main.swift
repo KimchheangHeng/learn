@@ -8,6 +8,8 @@
 
 import Foundation
 import Darwin
+import HHTool
+
 
 var ops  = Stack<String>()
 var vals = Stack<Double>()

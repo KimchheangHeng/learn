@@ -7,130 +7,141 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		262B1FA21F4C691400700308 /* HHTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262B1FA11F4C691400700308 /* HHTool.framework */; };
-		26E3EB0B1F2F72E2000F7091 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB0A1F2F72E2000F7091 /* main.swift */; };
+		262B1F991F4C687E00700308 /* HHTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 262B1F971F4C687E00700308 /* HHTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		262B1FA01F4C689C00700308 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262B1F9F1F4C689C00700308 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		26E3EB051F2F72E2000F7091 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		262B1FA11F4C691400700308 /* HHTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HHTool.framework; path = Library/HHTool.framework; sourceTree = "<group>"; };
-		26E3EB071F2F72E2000F7091 /* Stack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stack; sourceTree = BUILT_PRODUCTS_DIR; };
-		26E3EB0A1F2F72E2000F7091 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		262B1F941F4C687E00700308 /* HHTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HHTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		262B1F971F4C687E00700308 /* HHTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
+		262B1F981F4C687E00700308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		262B1F9F1F4C689C00700308 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		26E3EB041F2F72E2000F7091 /* Frameworks */ = {
+		262B1F901F4C687E00700308 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262B1FA21F4C691400700308 /* HHTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26E3EAFE1F2F72E2000F7091 = {
+		262B1F8A1F4C687E00700308 = {
 			isa = PBXGroup;
 			children = (
-				262B1FA11F4C691400700308 /* HHTool.framework */,
-				26E3EB091F2F72E2000F7091 /* Stack */,
-				26E3EB081F2F72E2000F7091 /* Products */,
+				262B1F961F4C687E00700308 /* HHTool */,
+				262B1F951F4C687E00700308 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		26E3EB081F2F72E2000F7091 /* Products */ = {
+		262B1F951F4C687E00700308 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26E3EB071F2F72E2000F7091 /* Stack */,
+				262B1F941F4C687E00700308 /* HHTool.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		26E3EB091F2F72E2000F7091 /* Stack */ = {
+		262B1F961F4C687E00700308 /* HHTool */ = {
 			isa = PBXGroup;
 			children = (
-				26E3EB0A1F2F72E2000F7091 /* main.swift */,
+				262B1F971F4C687E00700308 /* HHTool.h */,
+				262B1F9F1F4C689C00700308 /* Stack.swift */,
+				262B1F981F4C687E00700308 /* Info.plist */,
 			);
-			path = Stack;
+			path = HHTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		262B1F911F4C687E00700308 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262B1F991F4C687E00700308 /* HHTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		26E3EB061F2F72E2000F7091 /* Stack */ = {
+		262B1F931F4C687E00700308 /* HHTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26E3EB0E1F2F72E2000F7091 /* Build configuration list for PBXNativeTarget "Stack" */;
+			buildConfigurationList = 262B1F9C1F4C687E00700308 /* Build configuration list for PBXNativeTarget "HHTool" */;
 			buildPhases = (
-				26E3EB031F2F72E2000F7091 /* Sources */,
-				26E3EB041F2F72E2000F7091 /* Frameworks */,
-				26E3EB051F2F72E2000F7091 /* CopyFiles */,
+				262B1F8F1F4C687E00700308 /* Sources */,
+				262B1F901F4C687E00700308 /* Frameworks */,
+				262B1F911F4C687E00700308 /* Headers */,
+				262B1F921F4C687E00700308 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Stack;
-			productName = Stack;
-			productReference = 26E3EB071F2F72E2000F7091 /* Stack */;
-			productType = "com.apple.product-type.tool";
+			name = HHTool;
+			productName = HHTool;
+			productReference = 262B1F941F4C687E00700308 /* HHTool.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		26E3EAFF1F2F72E2000F7091 /* Project object */ = {
+		262B1F8B1F4C687E00700308 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = huahuahu;
 				TargetAttributes = {
-					26E3EB061F2F72E2000F7091 = {
+					262B1F931F4C687E00700308 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
-			buildConfigurationList = 26E3EB021F2F72E2000F7091 /* Build configuration list for PBXProject "Stack" */;
+			buildConfigurationList = 262B1F8E1F4C687E00700308 /* Build configuration list for PBXProject "HHTool" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 26E3EAFE1F2F72E2000F7091;
-			productRefGroup = 26E3EB081F2F72E2000F7091 /* Products */;
+			mainGroup = 262B1F8A1F4C687E00700308;
+			productRefGroup = 262B1F951F4C687E00700308 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26E3EB061F2F72E2000F7091 /* Stack */,
+				262B1F931F4C687E00700308 /* HHTool */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		262B1F921F4C687E00700308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		26E3EB031F2F72E2000F7091 /* Sources */ = {
+		262B1F8F1F4C687E00700308 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E3EB0B1F2F72E2000F7091 /* main.swift in Sources */,
+				262B1FA01F4C689C00700308 /* Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		26E3EB0C1F2F72E2000F7091 /* Debug */ = {
+		262B1F9A1F4C687E00700308 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -150,6 +161,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -159,6 +172,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -182,10 +196,12 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		26E3EB0D1F2F72E2000F7091 /* Release */ = {
+		262B1F9B1F4C687E00700308 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,6 +221,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -214,6 +232,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -229,29 +248,50 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		26E3EB0F1F2F72E2000F7091 /* Debug */ = {
+		262B1F9D1F4C687E00700308 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HHTool/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.HHTool;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		26E3EB101F2F72E2000F7091 /* Release */ = {
+		262B1F9E1F4C687E00700308 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HHTool/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.HHTool;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -259,25 +299,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26E3EB021F2F72E2000F7091 /* Build configuration list for PBXProject "Stack" */ = {
+		262B1F8E1F4C687E00700308 /* Build configuration list for PBXProject "HHTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26E3EB0C1F2F72E2000F7091 /* Debug */,
-				26E3EB0D1F2F72E2000F7091 /* Release */,
+				262B1F9A1F4C687E00700308 /* Debug */,
+				262B1F9B1F4C687E00700308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26E3EB0E1F2F72E2000F7091 /* Build configuration list for PBXNativeTarget "Stack" */ = {
+		262B1F9C1F4C687E00700308 /* Build configuration list for PBXNativeTarget "HHTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26E3EB0F1F2F72E2000F7091 /* Debug */,
-				26E3EB101F2F72E2000F7091 /* Release */,
+				262B1F9D1F4C687E00700308 /* Debug */,
+				262B1F9E1F4C687E00700308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 26E3EAFF1F2F72E2000F7091 /* Project object */;
+	rootObject = 262B1F8B1F4C687E00700308 /* Project object */;
 }

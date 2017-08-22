@@ -7,26 +7,27 @@
 //
 
 import Foundation
-class Stack <T > {
+public class Stack <T > {
     var array:[T]!
     
-    init() {
+    public init() {
         array = [T]()
     }
     
-    func push(item:T) -> Void {
+   public func push(item:T) -> Void {
         array.append(item)
     }
     
-    func pop() -> T {
+    public func pop() -> T {
         return array.removeLast()
     }
     
-    func isEmpty() -> Bool {
+    public func isEmpty() -> Bool {
         return array.isEmpty
     }
     
-    func size() -> Int {
+    public func size() -> Int {
         return array.count
     }
 }
+
