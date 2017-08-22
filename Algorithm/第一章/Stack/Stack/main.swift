@@ -8,7 +8,6 @@
 
 import Foundation
 import Darwin
-import HHTool
 
 
 var ops  = Stack<String>()
@@ -17,6 +16,7 @@ var vals = Stack<Double>()
 assert(CommandLine.argc > 1, "输入一个运算式，用空格间隔数字和字符")
 let input =  CommandLine.arguments[1]
 
+print("arguments is \(CommandLine.arguments)")
 let components = CommandLine.arguments[1].components(separatedBy: " ")
 
 print("components is \(components)")

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		262B1FA21F4C691400700308 /* HHTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262B1FA11F4C691400700308 /* HHTool.framework */; };
+		269A79911F4C70040022EF1E /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A79901F4C70040022EF1E /* Stack.swift */; };
 		26E3EB0B1F2F72E2000F7091 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB0A1F2F72E2000F7091 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -15,8 +15,8 @@
 		26E3EB051F2F72E2000F7091 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		262B1FA11F4C691400700308 /* HHTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HHTool.framework; path = Library/HHTool.framework; sourceTree = "<group>"; };
+		269A79901F4C70040022EF1E /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		26E3EB071F2F72E2000F7091 /* Stack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stack; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E3EB0A1F2F72E2000F7091 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262B1FA21F4C691400700308 /* HHTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +43,6 @@
 		26E3EAFE1F2F72E2000F7091 = {
 			isa = PBXGroup;
 			children = (
-				262B1FA11F4C691400700308 /* HHTool.framework */,
 				26E3EB091F2F72E2000F7091 /* Stack */,
 				26E3EB081F2F72E2000F7091 /* Products */,
 			);
@@ -61,6 +59,7 @@
 		26E3EB091F2F72E2000F7091 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
+				269A79901F4C70040022EF1E /* Stack.swift */,
 				26E3EB0A1F2F72E2000F7091 /* main.swift */,
 			);
 			path = Stack;
@@ -123,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269A79911F4C70040022EF1E /* Stack.swift in Sources */,
 				26E3EB0B1F2F72E2000F7091 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +235,7 @@
 		26E3EB0F1F2F72E2000F7091 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
@@ -247,6 +248,7 @@
 		26E3EB101F2F72E2000F7091 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
