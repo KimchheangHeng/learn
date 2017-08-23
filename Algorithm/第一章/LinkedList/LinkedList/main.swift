@@ -49,5 +49,5 @@ func testQueue() -> Void {
 
 }
 
-
+testStack()
 testQueue()

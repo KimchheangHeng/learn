@@ -8,10 +8,12 @@
 
 import Foundation
 
-class QueueLinkedList<Item>
+class QueueLinkedList<Item>:IteratorProtocol
 {
     var first:Node<Item>?
     var last:Node<Item>?
+    
+    typealias Element = Item
     
     private(set) var size:Int
     
@@ -50,5 +52,10 @@ class QueueLinkedList<Item>
         }
         size = size - 1
         return item
+    }
+    
+    
+    func next() -> Item? {
+        return dequeue()
     }
 }

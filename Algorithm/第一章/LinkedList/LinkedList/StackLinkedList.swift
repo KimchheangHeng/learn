@@ -9,10 +9,12 @@
 
 import Foundation
 
-class LinkedListStack<Item>
+class LinkedListStack<Item> :IteratorProtocol
 {
     var first:Node<Item>?
     private(set) var size:Int
+    
+    typealias Element = Item
     
     init() {
         size = 0
@@ -34,5 +36,9 @@ class LinkedListStack<Item>
         first = first!.next
         size = size - 1
         return item
+    }
+    
+    func next() -> LinkedListStack<Item>.Element? {
+        return pop()
     }
 }
