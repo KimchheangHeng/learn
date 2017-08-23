@@ -11,29 +11,28 @@ import Foundation
 
 class LinkedListStack<Item>
 {
-    var first:Node<Item>
+    var first:Node<Item>?
     private(set) var size:Int
     
     init() {
-        first = Node<Item>()
         size = 0
     }
     
     func push(item:Item) -> Void {
         let oldFirst = first
         first = Node<Item>()
-        first.item = item
-        first.next = oldFirst
+        first!.item = item
+        first!.next = oldFirst
         size = size + 1
     }
     
     func pop() -> Item? {
-        let item = first.item
-        if let _ = item ,let next = first.next
-        {
-            first = next
-            size = size - 1
+        if size == 0 {
+            return nil
         }
+        let item = first!.item
+        first = first!.next
+        size = size - 1
         return item
     }
 }

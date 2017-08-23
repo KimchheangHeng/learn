@@ -10,6 +10,7 @@
 		269A799F1F4C717F0022EF1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A799E1F4C717F0022EF1E /* main.swift */; };
 		269A79A81F4C740C0022EF1E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A79A71F4C740C0022EF1E /* Node.swift */; };
 		269A79AA1F4C741A0022EF1E /* StackLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A79A91F4C741A0022EF1E /* StackLinkedList.swift */; };
+		269A79AE1F4DC33F0022EF1E /* QueueLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A79AD1F4DC33F0022EF1E /* QueueLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		269A799E1F4C717F0022EF1E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		269A79A71F4C740C0022EF1E /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		269A79A91F4C741A0022EF1E /* StackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedList.swift; sourceTree = "<group>"; };
+		269A79AD1F4DC33F0022EF1E /* QueueLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				269A799E1F4C717F0022EF1E /* main.swift */,
 				269A79A71F4C740C0022EF1E /* Node.swift */,
 				269A79A91F4C741A0022EF1E /* StackLinkedList.swift */,
+				269A79AD1F4DC33F0022EF1E /* QueueLinkedList.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269A79AE1F4DC33F0022EF1E /* QueueLinkedList.swift in Sources */,
 				269A799F1F4C717F0022EF1E /* main.swift in Sources */,
 				269A79AA1F4C741A0022EF1E /* StackLinkedList.swift in Sources */,
 				269A79A81F4C740C0022EF1E /* Node.swift in Sources */,

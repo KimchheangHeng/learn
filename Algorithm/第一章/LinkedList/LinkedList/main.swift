@@ -9,25 +9,45 @@
 import Foundation
 import Darwin
 
+
 let input = readLine()
 
-let stack = LinkedListStack<String>()
 
+func testStack() -> Void {
 
-for str in input!.components(separatedBy:" ")
-{
-    if str != "-"
+    let stack = LinkedListStack<String>()
+
+    for str in input!.components(separatedBy:" ")
     {
-        stack.push(item:str)
+        if str != "-"
+        {
+            stack.push(item:str)
+        }
+        else if stack.size != 0
+        {
+            print("\(stack.pop() ?? "") ", separator:"", terminator:"")
+        }
     }
-    else if stack.size != 0
-    {
-        print("\(stack.pop() ?? "") ", separator:"", terminator:"")
+	print("(\(stack.size) left on stack)")
+}
+
+func testQueue() -> Void {
+    let queue = QueueLinkedList<String>()
+    
+    for str in input!.components(separatedBy: " ") {
+        if str != "-"
+        {
+            queue.enqueue(item: str)
+        }
+        else if !queue.isEmpty()
+        {
+            print("\(queue.dequeue()!) ", separator: "", terminator: "")
+        }
     }
+    
+    print("(\(queue.size) left on queue)")
+
 }
 
 
-print("(\(stack.size) left on stack)")
-
-
-
+testQueue()
