@@ -18,6 +18,7 @@
 		260F1DFC1F52691900E5D92B /* TestDispatchApply.m in Sources */ = {isa = PBXBuildFile; fileRef = 260F1DFB1F52691900E5D92B /* TestDispatchApply.m */; };
 		260F1DFF1F52725500E5D92B /* GCDTargetQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 260F1DFE1F52725500E5D92B /* GCDTargetQueueTest.m */; };
 		260F1E021F527A5D00E5D92B /* GCDSemaphoreTEst.m in Sources */ = {isa = PBXBuildFile; fileRef = 260F1E011F527A5D00E5D92B /* GCDSemaphoreTEst.m */; };
+		260F1E051F527EEA00E5D92B /* GCDSourceTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 260F1E041F527EEA00E5D92B /* GCDSourceTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		260F1DFE1F52725500E5D92B /* GCDTargetQueueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTargetQueueTest.m; sourceTree = "<group>"; };
 		260F1E001F527A5D00E5D92B /* GCDSemaphoreTEst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphoreTEst.h; sourceTree = "<group>"; };
 		260F1E011F527A5D00E5D92B /* GCDSemaphoreTEst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphoreTEst.m; sourceTree = "<group>"; };
+		260F1E031F527EEA00E5D92B /* GCDSourceTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSourceTimer.h; sourceTree = "<group>"; };
+		260F1E041F527EEA00E5D92B /* GCDSourceTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSourceTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				260F1DD91F52632800E5D92B /* ViewController.m */,
 				260F1E001F527A5D00E5D92B /* GCDSemaphoreTEst.h */,
 				260F1E011F527A5D00E5D92B /* GCDSemaphoreTEst.m */,
+				260F1E031F527EEA00E5D92B /* GCDSourceTimer.h */,
+				260F1E041F527EEA00E5D92B /* GCDSourceTimer.m */,
 				260F1DFA1F52691900E5D92B /* TestDispatchApply.h */,
 				260F1DFB1F52691900E5D92B /* TestDispatchApply.m */,
 				260F1DFD1F52725500E5D92B /* GCDTargetQueueTest.h */,
@@ -236,6 +241,7 @@
 				260F1E021F527A5D00E5D92B /* GCDSemaphoreTEst.m in Sources */,
 				260F1DF91F52634800E5D92B /* GCDGroupTest.m in Sources */,
 				260F1DDA1F52632800E5D92B /* ViewController.m in Sources */,
+				260F1E051F527EEA00E5D92B /* GCDSourceTimer.m in Sources */,
 				260F1DFC1F52691900E5D92B /* TestDispatchApply.m in Sources */,
 				260F1DD71F52632800E5D92B /* AppDelegate.m in Sources */,
 				260F1DD41F52632800E5D92B /* main.m in Sources */,
