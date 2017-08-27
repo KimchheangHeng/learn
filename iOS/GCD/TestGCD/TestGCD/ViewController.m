@@ -12,6 +12,7 @@
 #import "GCDTargetQueueTest.h"
 #import "GCDSemaphoreTEst.h"
 #import "GCDSourceTimer.h"
+#import "GCDSpecificDataTest.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,8 @@
 //    [TestDispatchApply test];
 //    [GCDTargetQueueTest testTargetQueue];
 //    [GCDSemaphoreTEst test];
-    [GCDSourceTimer test];
+//    [GCDSourceTimer test];
+    [GCDSpecificDataTest test];
 }
 
 
