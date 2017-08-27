@@ -1,8 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.59 clang-900.0.34.2)"
-options: "303d8a29868ad283df345c55b071dfb3"
-build_time: [1503797899, 130984000]
-inputs:
-  "/Users/huahuahu/GitHub/learn/iOS/GCD/GCDLearn/GCDLearn/TestPropertyWithDispatch.swift": [1503797770, 0]
-  "/Users/huahuahu/GitHub/learn/iOS/GCD/GCDLearn/GCDLearn/ViewController.swift": [1503794076, 0]
-  "/Users/huahuahu/GitHub/learn/iOS/GCD/GCDLearn/GCDLearn/AppDelegate.swift": [1503794076, 0]
-  "/Users/huahuahu/GitHub/learn/iOS/GCD/GCDLearn/GCDLearn/PropertyWithConcurrentQueue.swift": [9223372036, 854775807]

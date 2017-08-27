@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.59 clang-900.0.34.2)"
-options: "fe16cd9a2db58d40e33ee5bbce007501"
-build_time: [1503795751, 187402000]
-inputs:
-  "/Users/huahuahu/GitHub/learn/iOS/GCD/GCDLearn/GCDLearnTests/GCDLearnTests.swift": [1503795751, 0]

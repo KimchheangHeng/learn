@@ -16,6 +16,7 @@
 		260F1DED1F52632800E5D92B /* TestGCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 260F1DEC1F52632800E5D92B /* TestGCDTests.m */; };
 		260F1DF91F52634800E5D92B /* GCDGroupTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 260F1DF81F52634800E5D92B /* GCDGroupTest.m */; };
 		260F1DFC1F52691900E5D92B /* TestDispatchApply.m in Sources */ = {isa = PBXBuildFile; fileRef = 260F1DFB1F52691900E5D92B /* TestDispatchApply.m */; };
+		260F1DFF1F52725500E5D92B /* GCDTargetQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 260F1DFE1F52725500E5D92B /* GCDTargetQueueTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		260F1DF81F52634800E5D92B /* GCDGroupTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroupTest.m; sourceTree = "<group>"; };
 		260F1DFA1F52691900E5D92B /* TestDispatchApply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDispatchApply.h; sourceTree = "<group>"; };
 		260F1DFB1F52691900E5D92B /* TestDispatchApply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDispatchApply.m; sourceTree = "<group>"; };
+		260F1DFD1F52725500E5D92B /* GCDTargetQueueTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTargetQueueTest.h; sourceTree = "<group>"; };
+		260F1DFE1F52725500E5D92B /* GCDTargetQueueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTargetQueueTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				260F1DD91F52632800E5D92B /* ViewController.m */,
 				260F1DFA1F52691900E5D92B /* TestDispatchApply.h */,
 				260F1DFB1F52691900E5D92B /* TestDispatchApply.m */,
+				260F1DFD1F52725500E5D92B /* GCDTargetQueueTest.h */,
+				260F1DFE1F52725500E5D92B /* GCDTargetQueueTest.m */,
 				260F1DF71F52634800E5D92B /* GCDGroupTest.h */,
 				260F1DF81F52634800E5D92B /* GCDGroupTest.m */,
 				260F1DDB1F52632800E5D92B /* Main.storyboard */,
@@ -228,6 +233,7 @@
 				260F1DFC1F52691900E5D92B /* TestDispatchApply.m in Sources */,
 				260F1DD71F52632800E5D92B /* AppDelegate.m in Sources */,
 				260F1DD41F52632800E5D92B /* main.m in Sources */,
+				260F1DFF1F52725500E5D92B /* GCDTargetQueueTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

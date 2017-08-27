@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GCDGroupTest.h"
 #import "TestDispatchApply.h"
+#import "GCDTargetQueueTest.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,8 @@
 //    [GCDGroupTest testGroupWait];
 //    [GCDGroupTest testGroupNotify];
 //    [GCDGroupTest testGroupMutiQueue];
-    [TestDispatchApply test];
+//    [TestDispatchApply test];
+    [GCDTargetQueueTest testTargetQueue];
 }
 
 
@@ -31,5 +33,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)testQueueRelease
+{
+    dispatch_queue_t queue = dispatch_queue_create("com.huahuahu.test",NULL);
+    dispatch_async(queue, ^{
+        NSLog(@"test");
+    });
+//    不需要显式地对GCD进行内存管理了
+//    dispatch_release(queue);
+    
+}
 
 @end
