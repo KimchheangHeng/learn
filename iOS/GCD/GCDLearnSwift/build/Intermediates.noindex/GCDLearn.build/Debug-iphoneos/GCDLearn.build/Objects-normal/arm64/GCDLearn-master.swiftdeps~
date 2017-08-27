@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.59 clang-900.0.34.2)"
+options: "77658f88c36267db6cbcb15b25ba796d"
+build_time: [1503794079, 627484000]
+inputs:
+  "/Users/huahuahu/GitHub/learn/iOS/GCD/GCDLearn/GCDLearn/ViewController.swift": [1503794076, 0]
+  "/Users/huahuahu/GitHub/learn/iOS/GCD/GCDLearn/GCDLearn/AppDelegate.swift": [1503794076, 0]

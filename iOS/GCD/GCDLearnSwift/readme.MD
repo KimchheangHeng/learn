@@ -1,0 +1,2 @@
+使用swift来写block来同步变量
+效果不好，因为对swift的block掌握不好
