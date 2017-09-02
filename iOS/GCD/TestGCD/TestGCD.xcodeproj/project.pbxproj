@@ -190,6 +190,7 @@
 				TargetAttributes = {
 					260F1DCE1F52632800E5D92B = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R6P284TSWY;
 						ProvisioningStyle = Automatic;
 					};
 					260F1DE71F52632800E5D92B = {
@@ -387,6 +388,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = TestGCD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TestGCD;
@@ -398,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = TestGCD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TestGCD;
@@ -448,6 +453,7 @@
 				260F1DF31F52632800E5D92B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		260F1DF41F52632800E5D92B /* Build configuration list for PBXNativeTarget "TestGCDTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +462,7 @@
 				260F1DF61F52632800E5D92B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
