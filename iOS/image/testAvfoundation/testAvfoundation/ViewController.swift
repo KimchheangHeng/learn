@@ -21,11 +21,6 @@ class ViewController: UIViewController ,AVCaptureVideoDataOutputSampleBufferDele
     var previewLayer:AVCaptureVideoPreviewLayer?
     var faceBound:UIView?
     
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -37,8 +32,6 @@ class ViewController: UIViewController ,AVCaptureVideoDataOutputSampleBufferDele
 //        self.slider?.maximumValue = 1
         self.slider?.isContinuous = true
         self.slider?.addTarget(self, action: #selector(ViewController.sliderChange), for: .valueChanged)
-        
-        
         
     }
     
@@ -62,7 +55,6 @@ class ViewController: UIViewController ,AVCaptureVideoDataOutputSampleBufferDele
             print("time1 is \(time1)")
         })
         currentCamera?.unlockForConfiguration()
-
 
     }
     
@@ -154,7 +146,6 @@ class ViewController: UIViewController ,AVCaptureVideoDataOutputSampleBufferDele
             if let image = UIImage(data: imageData!) {
                 imageView.image = image
             }
-            
         }
 
         
@@ -173,7 +164,6 @@ class ViewController: UIViewController ,AVCaptureVideoDataOutputSampleBufferDele
 //            }
 //        }
         
-
     }
     func testFaceDection() -> Void {
         
@@ -227,7 +217,6 @@ class ViewController: UIViewController ,AVCaptureVideoDataOutputSampleBufferDele
         preview.frame = self.view.bounds
         self.view.layer.addSublayer(preview)
         self.previewLayer = preview
-
         
         self.currentCamera = deviceInput?.device
         let metaDateOutput = AVCaptureMetadataOutput()
