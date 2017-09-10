@@ -30,10 +30,11 @@ class RosyCIRenderer: FilterRenderer {
 	func prepare(with formatDescription: CMFormatDescription, outputRetainedBufferCountHint: Int) {
 		reset()
 
-		(outputPixelBufferPool,
+        let extractedExpr: (outputBufferPool: CVPixelBufferPool?, outputColorSpace: CGColorSpace?, outputFormatDescription: CMFormatDescription?) = allocateOutputBufferPool(with: formatDescription,
+                                                                                                                                                                             outputRetainedBufferCountHint: outputRetainedBufferCountHint)
+(outputPixelBufferPool,
 		 outputColorSpace,
-		 outputFormatDescription) = allocateOutputBufferPool(with: formatDescription,
-		                                                     outputRetainedBufferCountHint: outputRetainedBufferCountHint)
+		 outputFormatDescription) = extractedExpr
 		if outputPixelBufferPool == nil {
 			return
 		}
