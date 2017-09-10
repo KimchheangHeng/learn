@@ -137,10 +137,12 @@ class ViewController: UIViewController ,AVCaptureVideoDataOutputSampleBufferDele
         
         var counter = settings.count
         
+        
         stillCameraOutput.captureStillImageBracketAsynchronously(from: connection, withSettingsArray: settings) {
             (buffer, settings, error) -> Void in
             counter = counter - 1
             print("\(counter) remains")
+            
             let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer!)
             let metadata:NSDictionary = CMCopyDictionaryOfAttachments(nil, buffer!, CMAttachmentMode(kCMAttachmentMode_ShouldPropagate))!
             if let image = UIImage(data: imageData!) {
