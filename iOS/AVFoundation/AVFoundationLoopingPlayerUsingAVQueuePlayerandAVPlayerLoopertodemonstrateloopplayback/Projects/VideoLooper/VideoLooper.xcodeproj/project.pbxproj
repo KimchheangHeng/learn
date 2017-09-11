@@ -124,6 +124,7 @@
 				TargetAttributes = {
 					2306FE1D1CE15DDC00F5C8F0 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R6P284TSWY;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -289,9 +290,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = VideoLooper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.VideoLooper";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.testCoreImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
@@ -303,9 +305,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = VideoLooper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.VideoLooper";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.testCoreImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
