@@ -388,6 +388,7 @@
 				GCC_PREFIX_HEADER = "ColorObjectTracking/ColorObjectTracking-Prefix.pch";
 				GCC_THUMB_SUPPORT = "";
 				INFOPLIST_FILE = "ColorObjectTracking/ColorObjectTracking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -403,6 +404,7 @@
 				GCC_PREFIX_HEADER = "ColorObjectTracking/ColorObjectTracking-Prefix.pch";
 				GCC_THUMB_SUPPORT = "";
 				INFOPLIST_FILE = "ColorObjectTracking/ColorObjectTracking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

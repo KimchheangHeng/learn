@@ -16,7 +16,7 @@
 
 using namespace vmath;
 
-BEGIN_APP_DECLARATION(InstancingExample)
+ (InstancingExample)
     // Override functions from base class
     virtual void Initialize(const char * title);
     virtual void Display(bool auto_redraw);

@@ -7,182 +7,182 @@
 		<key>01-keypress.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>01-triangles.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>4</integer>
 		</dict>
 		<key>03-drawcommands.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>5</integer>
 		</dict>
 		<key>03-instancing.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>6</integer>
 		</dict>
 		<key>03-instancing2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>7</integer>
 		</dict>
 		<key>03-instancing3.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>8</integer>
 		</dict>
 		<key>03-pointsprites.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>9</integer>
 		</dict>
 		<key>03-primitiverestart.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>10</integer>
 		</dict>
 		<key>03-xfb.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>11</integer>
 		</dict>
 		<key>04-gouraud-float.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>13</integer>
 		</dict>
 		<key>04-gouraud.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>12</integer>
 		</dict>
 		<key>04-shadowmap.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>14</integer>
 		</dict>
 		<key>06-cubemap.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>15</integer>
 		</dict>
 		<key>06-load-texture.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>16</integer>
 		</dict>
 		<key>06-mipfilters.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>17</integer>
 		</dict>
 		<key>06-multitexture.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>18</integer>
 		</dict>
 		<key>06-statictexture.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>19</integer>
 		</dict>
 		<key>06-texturewrapping.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>20</integer>
 		</dict>
 		<key>06-volumetexturing.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>21</integer>
 		</dict>
 		<key>08-lightmodels.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>22</integer>
 		</dict>
 		<key>09-simpletess.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>23</integer>
 		</dict>
 		<key>09-teapot.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>24</integer>
 		</dict>
 		<key>10-draw-xfb.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>25</integer>
 		</dict>
 		<key>10-fur.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>26</integer>
 		</dict>
 		<key>10-viewport-array.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>27</integer>
 		</dict>
 		<key>11-doublewrite.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>26</integer>
+			<integer>28</integer>
 		</dict>
 		<key>11-oit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>27</integer>
+			<integer>29</integer>
 		</dict>
 		<key>11-overdrawcount.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>28</integer>
+			<integer>30</integer>
 		</dict>
 		<key>12-imageprocessing.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>31</integer>
 		</dict>
 		<key>12-particlesimulator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>30</integer>
+			<integer>32</integer>
 		</dict>
 		<key>12-raytracer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>31</integer>
+			<integer>33</integer>
 		</dict>
 		<key>12-simplecompute.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>32</integer>
+			<integer>34</integer>
 		</dict>
 		<key>ALL_BUILD.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>ZERO_CHECK.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>33</integer>
+			<integer>3</integer>
 		</dict>
 		<key>boing.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>40</integer>
+			<integer>47</integer>
 		</dict>
 		<key>clipboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>47</integer>
+			<integer>40</integer>
 		</dict>
 		<key>cursor.xcscheme</key>
 		<dict>
@@ -192,7 +192,7 @@
 		<key>debug.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>34</integer>
+			<integer>2</integer>
 		</dict>
 		<key>empty.xcscheme</key>
 		<dict>
@@ -217,7 +217,7 @@
 		<key>glfw.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>39</integer>
+			<integer>37</integer>
 		</dict>
 		<key>glfwinfo.xcscheme</key>
 		<dict>
@@ -237,7 +237,7 @@
 		<key>install.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>35</integer>
+			<integer>38</integer>
 		</dict>
 		<key>joysticks.xcscheme</key>
 		<dict>
@@ -262,7 +262,7 @@
 		<key>release.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>36</integer>
+			<integer>39</integer>
 		</dict>
 		<key>reopen.xcscheme</key>
 		<dict>
@@ -302,12 +302,12 @@
 		<key>uninstall.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>38</integer>
+			<integer>35</integer>
 		</dict>
 		<key>vermilion.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>37</integer>
+			<integer>36</integer>
 		</dict>
 		<key>wave.xcscheme</key>
 		<dict>

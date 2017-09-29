@@ -147,13 +147,6 @@
 		230D4B89E40C4081949F874B /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDB45FC3B24EB18F8E69F0 /* nsgl_context.m */; };
 		25A1CCDF713F466F974514EC /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D214767E78B42F882CB92F1 /* getopt.c */; };
 		26165F799637448F90DB1502 /* 10-viewport-array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46A15A33F9BF40CCBE85D1EF /* 10-viewport-array.cpp */; };
-		26C9D8B61F71574600605AA9 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9D8B51F71574600605AA9 /* OpenGL.framework */; };
-		26C9D8B81F715C5E00605AA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9D8B71F715C5D00605AA9 /* Foundation.framework */; };
-		26C9D8BA1F715CCA00605AA9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9D8B91F715CCA00605AA9 /* CoreFoundation.framework */; };
-		26C9D8BC1F715CDC00605AA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9D8BB1F715CDC00605AA9 /* CoreGraphics.framework */; };
-		26C9D8BE1F715D0700605AA9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9D8BD1F715D0700605AA9 /* CoreVideo.framework */; };
-		26C9D8C01F715D1F00605AA9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9D8BF1F715D1F00605AA9 /* AppKit.framework */; };
-		26C9D8C21F715D6700605AA9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9D8C11F715D6600605AA9 /* IOKit.framework */; };
 		2B35607C701744D6940B564C /* 06-mipfilters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED982351008243C7A4DD5EE6 /* 06-mipfilters.cpp */; };
 		2B6D3D4DB85842F59250FF8D /* 03-primitiverestart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 111841151AEF4B6B81668B0A /* 03-primitiverestart.cpp */; };
 		2D9DD19A86334FF9BFDE4A9D /* 06-cubemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A26AA7906A6143F089BCA846 /* 06-cubemap.cpp */; };
@@ -1990,13 +1983,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26C9D8C21F715D6700605AA9 /* IOKit.framework in Frameworks */,
-				26C9D8C01F715D1F00605AA9 /* AppKit.framework in Frameworks */,
-				26C9D8BE1F715D0700605AA9 /* CoreVideo.framework in Frameworks */,
-				26C9D8BC1F715CDC00605AA9 /* CoreGraphics.framework in Frameworks */,
-				26C9D8BA1F715CCA00605AA9 /* CoreFoundation.framework in Frameworks */,
-				26C9D8B81F715C5E00605AA9 /* Foundation.framework in Frameworks */,
-				26C9D8B61F71574600605AA9 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
