@@ -8,7 +8,7 @@
  */
 
 #import "RosyWriterViewController.h"
-
+#import <sys/kdebug_signpost.h>
 #import <QuartzCore/QuartzCore.h>
 #import "RosyWriterCapturePipeline.h"
 #import "OpenGLPixelBufferView.h"
@@ -219,6 +219,10 @@
 // Preview
 - (void)capturePipeline:(RosyWriterCapturePipeline *)capturePipeline previewPixelBufferReadyForDisplay:(CVPixelBufferRef)previewPixelBuffer
 {
+    static uintptr_t  dd = 2;
+    dd++;
+    kdebug_signpost_start(7, 8, 8, 8, 2);
+    
 	if ( ! _allowedToUseGPU ) {
 		return;
 	}
@@ -226,16 +230,20 @@
 	if ( ! _previewView ) {
 		[self setupPreviewView];
 	}
-	
+    kdebug_signpost_end(7, 8, 8, 8, 2);
+
 	[_previewView displayPixelBuffer:previewPixelBuffer];
 }
 
 - (void)capturePipelineDidRunOutOfPreviewBuffers:(RosyWriterCapturePipeline *)capturePipeline
 {
+
 	if ( _allowedToUseGPU ) {
 		[_previewView flushPixelBufferCache];
 	}
+
 }
+
 
 // Recording
 - (void)capturePipelineRecordingDidStart:(RosyWriterCapturePipeline *)capturePipeline

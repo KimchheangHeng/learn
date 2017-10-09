@@ -372,6 +372,8 @@
 - (void)newFrameReadyAtTime:(CMTime)frameTime atIndex:(NSInteger)textureIndex;
 {
     runSynchronouslyOnVideoProcessingQueue(^{
+        glPushGroupMarkerEXT(0, "Draw Spaceship");
+
         [GPUImageContext setActiveShaderProgram:displayProgram];
         [self setDisplayFramebuffer];
         
@@ -390,6 +392,7 @@
         [self presentFramebuffer];
         [inputFramebufferForDisplay unlock];
         inputFramebufferForDisplay = nil;
+        glPopGroupMarkerEXT();
     });
 }
 
