@@ -1,3 +1,5 @@
+set hls
+set incsearch
 "vundle
 set nocompatible
 filetype off
