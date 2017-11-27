@@ -1,0 +1,12 @@
+b.c 2017-11-27 20:12:02,870 INFO normal infor for log1
+b.c 2017-11-27 20:12:02,870 WARNING warning info for log1:b.c
+b.c 2017-11-27 20:12:02,870 ERROR error info for log1:abcd
+b.c 2017-11-27 20:12:02,870 CRITICAL critical info for log1:not worked
+b.c 2017-11-27 20:12:25,505 INFO normal infor for log1
+b.c 2017-11-27 20:12:25,505 WARNING warning info for log1:b.c
+b.c 2017-11-27 20:12:25,505 ERROR error info for log1:abcd
+b.c 2017-11-27 20:12:25,505 CRITICAL critical info for log1:not worked
+b.c 2017-11-27 20:12:31,467 INFO normal infor for log1
+b.c 2017-11-27 20:12:31,467 WARNING warning info for log1:b.c
+b.c 2017-11-27 20:12:31,467 ERROR error info for log1:abcd
+b.c 2017-11-27 20:12:31,467 CRITICAL critical info for log1:not worked
