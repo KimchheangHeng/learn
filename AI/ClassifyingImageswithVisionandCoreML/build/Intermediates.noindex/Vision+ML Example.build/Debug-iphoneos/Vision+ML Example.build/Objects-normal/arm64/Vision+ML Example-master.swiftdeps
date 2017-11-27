@@ -1,8 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
-options: "1444379011df048ffd07eb0086a4b81a"
-build_time: [1507253191, 477243000]
-inputs:
-  "/Users/huahuahu/Desktop/ClassifyingImageswithVisionandCoreML/Vision+ML Example/CGImagePropertyOrientation+UIImageOrientation.swift": [1504684518, 0]
-  "/Users/huahuahu/Desktop/ClassifyingImageswithVisionandCoreML/Vision+ML Example/ImageClassificationViewController.swift": [1504684518, 0]
-  "/Users/huahuahu/Desktop/ClassifyingImageswithVisionandCoreML/Vision+ML Example/AppDelegate.swift": [1504684518, 0]
-  "/Users/huahuahu/Desktop/ClassifyingImageswithVisionandCoreML/build/Intermediates.noindex/Vision+ML Example.build/Debug-iphoneos/Vision+ML Example.build/DerivedSources/CoreMLGenerated/MobileNet/MobileNet.swift": [1507253191, 0]
