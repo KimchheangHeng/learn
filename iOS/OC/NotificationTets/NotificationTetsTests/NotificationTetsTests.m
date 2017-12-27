@@ -1,6 +1,6 @@
 //
-//  AssociatedObjectTests.m
-//  AssociatedObjectTests
+//  NotificationTetsTests.m
+//  NotificationTetsTests
 //
 //  Created by tigerguo on 2017/12/26.
 //  Copyright © 2017年 tigerguo. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface AssociatedObjectTests : XCTestCase
+@interface NotificationTetsTests : XCTestCase
 
 @end
 
-@implementation AssociatedObjectTests
+@implementation NotificationTetsTests
 
 - (void)setUp {
     [super setUp];
