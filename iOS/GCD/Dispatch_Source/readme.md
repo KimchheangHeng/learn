@@ -1,0 +1,3 @@
+kqueue 是XNU内核中发生各种事件时，在应用程序编程方执行处理的技术。其CPU负荷非常小，尽量不占用资源。
+Dispatch_source 是kqueue的包装
+用这个机制来实现一个定时器，据说比更RunLoop更加精准
