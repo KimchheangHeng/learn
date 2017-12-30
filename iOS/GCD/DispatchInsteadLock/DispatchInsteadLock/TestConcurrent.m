@@ -20,6 +20,8 @@
 {
     if (self = [super init])
     {
+        //这种队列应该只用来访问属性，不用来做其他事情。否则可能导致死锁
+        //队列时一种极为轻量的机制，可以为每个属性都创建一个专门的同步队列
         _syncQueue = dispatch_queue_create("com.test.tiger1", DISPATCH_QUEUE_CONCURRENT);
     }
     return self;
