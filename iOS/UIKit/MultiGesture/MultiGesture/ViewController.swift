@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController,UIGestureRecognizerDelegate {
+    
 
     @IBOutlet weak var pan_swipe_label: UILabel!
     @IBOutlet weak var tapLabel: UILabel!
@@ -23,7 +24,21 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         self.multiTap()
         self.pan_swipe()
-
+        self.buttonstuff()
+    }
+    
+    func buttonstuff() -> Void {
+        let button = UIButton.init(frame: CGRect.init(x: 100, y: 300, width: 100, height: 100))
+        button.setTitle("button", for: .normal)
+        button.backgroundColor = UIColor.lightGray
+        button.addTarget(self, action: #selector(self.clicked), for: .touchUpInside)
+        view.addSubview(button)
+        
+        //加一个手势
+        //installing a gesture recognizer directly on a control prevents that control from calling its action method
+        //这样子，touchupinside永远不会被调用了
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(self.taped))
+        button.addGestureRecognizer(tap)
     }
     
     func pan_swipe() -> Void {
@@ -79,7 +94,15 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
     @objc func swipe() -> Void {
         print("swipe")
     }
-
+    
+    @objc func clicked(){
+        print("clicked")
+    }
+    
+    @objc func taped(){
+        print("tapped \(ViewController.t)")
+        ViewController.t = ViewController.t + 1
+    }
 
 }
 
