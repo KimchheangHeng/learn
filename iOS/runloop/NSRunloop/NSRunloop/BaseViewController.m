@@ -24,6 +24,8 @@ NSString * const reuseID = @"id";
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) CADisplayLink *displayLink;
+@property (nonatomic, assign) NSUInteger runLoopCount;
+
 
 @end
 
@@ -31,9 +33,65 @@ NSString * const reuseID = @"id";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //注释掉原来的，自己做一个测试
     [self showFPS];
     [self createUI];
+    
+    CFRunLoopObserverRef obser=  CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopBeforeWaiting|kCFRunLoopAfterWaiting, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+        if (activity == kCFRunLoopBeforeWaiting)
+        {
+            NSLog(@"kCFRunLoopBeforeWaiting");
+        }
+        else if (activity == kCFRunLoopAfterWaiting)
+        {
+            self.runLoopCount++;
+            NSLog(@"kCFRunLoopAfterWaiting");
+        }
+    });
+    CFRunLoopAddObserver([[NSRunLoop mainRunLoop] getCFRunLoop], obser, kCFRunLoopCommonModes);
+
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self asyncCall:5];
+
+    });
+    
 }
+
+- (void)asyncCall:(NSUInteger)count1
+{
+    if (count1 == 0)
+    {
+        return;
+    }
+    __block NSUInteger count = count1;
+    [WPRunloopTasks shareRunloop].addTask(^{
+        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        count++;
+    }).addTask(^{
+        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        count++;
+    }).addTask(^{
+        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        count++;
+    }).addTask(^{
+        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        count++;
+    }).addTask(^{
+        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        count++;
+    }).addTask(^{
+        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        count++;
+    });
+
+//    NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [self asyncCall:count-1];
+//    });
+}
+
+
 - (void)showFPS {
     self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(handleDisplayLink:)];
     

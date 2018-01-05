@@ -81,9 +81,15 @@ static void callBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
         //取出任务
         RunloopBlock task = runloop.numOfRunloopTasks.firstObject;
         //执行任务
-        task();
+        if (task)
+        {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                task();
+               
+            });
+        }
         //干掉第一个任务
-        [runloop.numOfRunloopTasks removeObjectAtIndex:0];
+         [runloop.numOfRunloopTasks removeObjectAtIndex:0];
     }
 }
 
@@ -91,10 +97,10 @@ static void callBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
 /**
  链式调用添加task
  */
-- (WPRunloopTasks * (^)(RunloopBlock runloopTask))addTask {
+- (WPRunloopTasks * (^)(RunloopBlock runloopTask1))addTask {
     __weak __typeof(&*self)weakSelf = self;
-    return ^(RunloopBlock runloopTask) {
-        [weakSelf.numOfRunloopTasks addObject:runloopTask];
+    return ^(RunloopBlock runloopTask1) {
+        [weakSelf.numOfRunloopTasks addObject:runloopTask1];
         //保证之前没有显示出来的任务,不再浪费时间加载
         if (weakSelf.numOfRunloopTasks.count > weakSelf.numOfRunloops) {
             [weakSelf.numOfRunloopTasks removeObjectAtIndex:0];
