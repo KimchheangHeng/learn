@@ -23,9 +23,9 @@
 //    [self test_dispatch_semaphore];
 //    [self test_nslock];
 //    [self test_recursive_lock];
-//    [self test_nscondition_lock];
+    [self test_nscondition_lock];
 //    [self test_condition];
-    [self test_pthread_mutex];
+//    [self test_pthread_mutex];
 //    [self test_pthread_mutex_recursive];
 //    [self test_spin_lock];
 }
@@ -157,7 +157,7 @@
     
 }
 
-//暂时看不懂
+//知道怎么做了，但是不了解怎么实现的
 - (void)test_nscondition_lock
 {
     NSConditionLock *lock  = [[NSConditionLock alloc] init];
@@ -168,9 +168,12 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         while (1) {
+            //condition默认是0，所以先进这里
+            //condition 是NO_DATA，才会继续进行
             [lock lockWhenCondition:NO_DATA];
             [products addObject:[[NSObject alloc] init]];
             NSLog(@"produce a product,总量:%zi",products.count);
+            //把condition变成HAS_DATA
             [lock unlockWithCondition:HAS_DATA];
             sleep(1);
         }
@@ -180,9 +183,11 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         while (1) {
             NSLog(@"wait for product");
+            //condition是HAS_DATA，才会继续运行
             [lock lockWhenCondition:HAS_DATA];
             [products removeObjectAtIndex:0];
             NSLog(@"custome a product");
+            //把condition变成NO_DATA
             [lock unlockWithCondition:NO_DATA];
         }
         
@@ -190,6 +195,8 @@
     
 }
 
+//对pthread_mutex_t和pthread_cond_t 的封装
+//NSCondition 的对象实际上作为一个锁和一个线程检查器：锁主要为了当检测条件时保护数据源，执行条件引发的任务；线程检查器主要是根据条件决定是否继续运行线程，即线程是否被阻塞。
 - (void)test_condition
 {
     NSCondition *condition = [[NSCondition alloc] init];
@@ -199,7 +206,9 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         while (1) {
             [condition lock];
-            if ([products count] == 0) {
+            //这里要用while，避免虚假唤醒
+            //Signaling a condition does not guarantee that the condition itself is true. There are timing issues involved in signaling that may cause false signals to appear
+            while ([products count] == 0) {
                 NSLog(@"wait for product");
                 [condition wait];//让当前线程处于等待状态
             }
@@ -225,7 +234,7 @@
 
 - (void)test_pthread_mutex
 {
-    __block BOOL readyToGo = YES;
+    __block BOOL readyToGo = NO;
     __block pthread_mutex_t mutex;
     __block pthread_cond_t condition;
     __block count = 0;
@@ -241,8 +250,9 @@
             while (!readyToGo) {
                 pthread_cond_wait(&condition, &mutex);
             }
+            count--;
             
-            NSLog(@"produce");
+            NSLog(@"consume,%@",@(count));
             
             readyToGo = NO;
             pthread_mutex_unlock(&mutex);
@@ -254,7 +264,8 @@
         while (YES) {
             pthread_mutex_lock(&mutex);
             readyToGo = YES;
-            NSLog(@"consume");
+            count++;
+            NSLog(@"produce,%@",@(count));
             pthread_cond_signal(&condition);
             pthread_mutex_unlock(&mutex);
         }
