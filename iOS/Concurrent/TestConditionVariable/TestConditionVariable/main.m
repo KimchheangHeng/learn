@@ -22,14 +22,16 @@ void thread1Entry()
         pthread_mutex_lock(&mutex);
         count++;
         NSLog(@"in %p, count is %@",[NSThread currentThread],@(count));
+        NSTimeInterval t  = arc4random_uniform(100)/150;
+        [NSThread sleepForTimeInterval:t];
+
         pthread_mutex_unlock(&mutex);
         if(count>=10)
         {
+            //unblock a thread waiting for a condition variable
             pthread_cond_signal(&cond);
         }
 
-        NSTimeInterval t  = arc4random_uniform(100)/150;
-        [NSThread sleepForTimeInterval:t];
     }
 
     return;
@@ -42,13 +44,14 @@ void thread2Entry()
         pthread_mutex_lock(&mutex);
         count++;
         NSLog(@"in %p, count is %@",[NSThread currentThread],@(count));
+        NSTimeInterval t  = arc4random_uniform(100)/100;
+        [NSThread sleepForTimeInterval:t];
+
         pthread_mutex_unlock(&mutex);
         if(count>=10)
         {
             pthread_cond_signal(&cond);
         }
-        NSTimeInterval t  = arc4random_uniform(100)/100;
-        [NSThread sleepForTimeInterval:t];
     }
 
     return;
@@ -56,16 +59,24 @@ void thread2Entry()
 
 void thread3Entry()
 {
-    pthread_mutex_lock(&mutex);
-    while(count < 10)
+    while (1)
     {
-        NSLog(@"wait in %p, count is %@",[NSThread currentThread],@(count));
-        pthread_cond_wait(&cond, &mutex);
+        pthread_mutex_lock(&mutex);
+        //pthread_cond_signal()和pthread_cond_wait()返回之间,有时间差,
+        //所以要在判断一次，以免条件不满足
+        while(count < 10)
+        {
+            NSLog(@"wait in %p, count is %@",[NSThread currentThread],@(count));
+            //wait on a condition variable
+            //阻塞当前线程，等待条件变量cond，并且释放锁mutex。这一系列操作是原子操作
+            //其他线程对同一个cond调用pthread_cond_signal或者pthread_cond_broadcast，并且当前线程获得锁之后，当前线程被unblock
+            pthread_cond_wait(&cond, &mutex);
+        }
+        
+        NSLog(@"sum is over 10!");
+        count=0;
+        pthread_mutex_unlock(&mutex);
     }
-    
-    printf("sum is over 10!");
-    count=0;
-    pthread_mutex_unlock(&mutex);
     
 
     return;
