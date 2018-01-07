@@ -46,6 +46,7 @@ void thread2Entry()
         NSLog(@"in %p, count is %@",[NSThread currentThread],@(count));
         NSTimeInterval t  = arc4random_uniform(100)/100;
         [NSThread sleepForTimeInterval:t];
+        //顺序不可调换，先signal，再unlock
         if(count>=10)
         {
             pthread_cond_signal(&cond);
@@ -62,8 +63,9 @@ void thread3Entry()
     while (1)
     {
         pthread_mutex_lock(&mutex);
-        //pthread_cond_signal()和pthread_cond_wait()返回之间,有时间差,
-        //所以要在判断一次，以免条件不满足
+        //pthread_cond_signal()和pthread_cond_wait()返回之间,有时间差。也可能是其他原因导致的pthread_cond_wait返回了
+        //所以要在判断一次，以免条件不满足。
+        //虚假唤醒问题
         while(count < 10)
         {
             NSLog(@"wait in %p, count is %@",[NSThread currentThread],@(count));
