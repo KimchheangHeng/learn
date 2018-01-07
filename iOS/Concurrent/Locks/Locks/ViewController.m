@@ -68,7 +68,7 @@
         dispatch_time_t overTime = dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC);
         dispatch_semaphore_wait(signal, overTime);
         NSLog(@"需要线程同步的操作1 开始");
-        sleep(2);
+//        sleep(2);
         NSLog(@"需要线程同步的操作1 结束");
         dispatch_semaphore_signal(signal);
     });
@@ -228,6 +228,7 @@
     __block BOOL readyToGo = YES;
     __block pthread_mutex_t mutex;
     __block pthread_cond_t condition;
+    __block count = 0;
     
 
     pthread_mutex_init(&mutex, NULL);

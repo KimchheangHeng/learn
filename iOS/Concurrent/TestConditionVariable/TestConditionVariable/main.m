@@ -24,13 +24,13 @@ void thread1Entry()
         NSLog(@"in %p, count is %@",[NSThread currentThread],@(count));
         NSTimeInterval t  = arc4random_uniform(100)/150;
         [NSThread sleepForTimeInterval:t];
-
-        pthread_mutex_unlock(&mutex);
         if(count>=10)
         {
             //unblock a thread waiting for a condition variable
             pthread_cond_signal(&cond);
         }
+
+        pthread_mutex_unlock(&mutex);
 
     }
 
@@ -46,12 +46,12 @@ void thread2Entry()
         NSLog(@"in %p, count is %@",[NSThread currentThread],@(count));
         NSTimeInterval t  = arc4random_uniform(100)/100;
         [NSThread sleepForTimeInterval:t];
-
-        pthread_mutex_unlock(&mutex);
         if(count>=10)
         {
             pthread_cond_signal(&cond);
         }
+
+        pthread_mutex_unlock(&mutex);
     }
 
     return;
