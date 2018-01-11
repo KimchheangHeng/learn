@@ -24,7 +24,6 @@ NSString * const reuseID = @"id";
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) CADisplayLink *displayLink;
-@property (nonatomic, assign) NSUInteger runLoopCount;
 
 
 @end
@@ -35,17 +34,19 @@ NSString * const reuseID = @"id";
     [super viewDidLoad];
     //注释掉原来的，自己做一个测试
     [self showFPS];
-    [self createUI];
-    
+//    [self createUI];
+    __block CFTimeInterval currentTime = CACurrentMediaTime();
     CFRunLoopObserverRef obser=  CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopBeforeWaiting|kCFRunLoopAfterWaiting, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
         if (activity == kCFRunLoopBeforeWaiting)
         {
-            NSLog(@"kCFRunLoopBeforeWaiting");
+            CFTimeInterval reallyCurrent = CACurrentMediaTime();
+//            NSLog(@"kCFRunLoopBeforeWaiting,cost %.4f",(reallyCurrent - currentTime));
+            currentTime = reallyCurrent;
         }
         else if (activity == kCFRunLoopAfterWaiting)
         {
-            self.runLoopCount++;
-            NSLog(@"kCFRunLoopAfterWaiting");
+            self.currrentRunloopCount++;
+//            NSLog(@"kCFRunLoopAfterWaiting");
         }
     });
     CFRunLoopAddObserver([[NSRunLoop mainRunLoop] getCFRunLoop], obser, kCFRunLoopCommonModes);
@@ -66,22 +67,32 @@ NSString * const reuseID = @"id";
     }
     __block NSUInteger count = count1;
     [WPRunloopTasks shareRunloop].addTask(^{
-        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        NSLog(@"really currentRunLoop is %@,count is %@",@([WPRunloopTasks shareRunloop].runLoopCount),@(count));
+//        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
         count++;
     }).addTask(^{
-        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+//        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        NSLog(@"really currentRunLoop is %@,count is %@",@([WPRunloopTasks shareRunloop].runLoopCount),@(count));
         count++;
     }).addTask(^{
-        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+//        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        NSLog(@"really currentRunLoop is %@,count is %@",@([WPRunloopTasks shareRunloop].runLoopCount),@(count));
+
         count++;
     }).addTask(^{
-        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+//        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        NSLog(@"really currentRunLoop is %@,count is %@",@([WPRunloopTasks shareRunloop].runLoopCount),@(count));
+
         count++;
     }).addTask(^{
-        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+//        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        NSLog(@"really currentRunLoop is %@,count is %@",@([WPRunloopTasks shareRunloop].runLoopCount),@(count));
+
         count++;
     }).addTask(^{
-        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+//        NSLog(@"in count %@,runloop count %@",@(count),@(self.runLoopCount));
+        NSLog(@"really currentRunLoop is %@,count is %@",@([WPRunloopTasks shareRunloop].runLoopCount),@(count));
+//
         count++;
     });
 

@@ -36,6 +36,8 @@ typedef void(^RunloopBlock) (void);
 
 @property (nonatomic, copy) dispatch_block_t block;
 
+@property (nonatomic, assign) NSUInteger runLoopCount;
+
 /**
  严格单例
  

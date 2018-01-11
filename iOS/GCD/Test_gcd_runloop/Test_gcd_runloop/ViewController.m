@@ -34,11 +34,11 @@
     });
     
     CFRunLoopAddObserver([[NSRunLoop mainRunLoop] getCFRunLoop], obser, kCFRunLoopCommonModes);
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [NSTimer scheduledTimerWithTimeInterval:6 repeats:0 block:^(NSTimer * _Nonnull timer) {
 //            [self asyncCall:5];
 //        }];
-//    });
+    });
     //用perform会有不同吗
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [NSTimer scheduledTimerWithTimeInterval:6 repeats:0 block:^(NSTimer * _Nonnull timer) {

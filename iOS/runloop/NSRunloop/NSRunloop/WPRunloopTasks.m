@@ -77,16 +77,14 @@ static NSString *WPRunloopTaskstr = @"WPRunloopTasks";
  */
 static void callBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info){
     WPRunloopTasks *runloop = (__bridge WPRunloopTasks *)info;
+    [WPRunloopTasks shareRunloop].runLoopCount++;
     if(runloop.numOfRunloopTasks.count) {
         //取出任务
         RunloopBlock task = runloop.numOfRunloopTasks.firstObject;
         //执行任务
         if (task)
         {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                task();
-               
-            });
+            task();
         }
         //干掉第一个任务
          [runloop.numOfRunloopTasks removeObjectAtIndex:0];
