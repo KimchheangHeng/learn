@@ -16,55 +16,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
     dispatch_group_t group1 = dispatch_group_create();
     dispatch_group_t group2 = dispatch_group_create();
-
+    
+    NSLog(@"1,begin");
     if (1)
     {
         [self func1WithGroup:group1];
         dispatch_group_enter(group2);
-        dispatch_group_notify(group1, dispatch_get_main_queue(), ^{
+        dispatch_group_notify(group1, dispatch_get_global_queue(0, 0), ^{
+            NSLog(@"6, after group1 clear");
             [self func2WithGroup:group2];
             dispatch_group_leave(group2);
         });
-
     }
+    
     //如果if中是0，那么也会执行，不会阻塞
     //因为group对应的值是0
-    dispatch_group_notify(group2, dispatch_get_main_queue(), ^{
+    dispatch_group_notify(group2, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"9, after group2 clear");
         [self finalFunc:group2];
     });
+    NSLog(@"not blocking code ");
 }
 
 - (void)func1WithGroup:(dispatch_group_t)group
 {
-    [NSThread detachNewThreadWithBlock:^{
-        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSRunLoopCommonModes];
-        NSLog(@"%@",[NSThread currentThread]);
-        [NSThread sleepForTimeInterval:2];
-        dispatch_group_enter(group);
-        dispatch_group_leave(group);
-
-    }];
     dispatch_group_enter(group);
-    dispatch_group_leave(group);
+    NSLog(@"2,after group1 enter");
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"3,before group1 leave");
+        [NSThread sleepForTimeInterval:1];
+        dispatch_group_leave(group);
+        NSLog(@"5, after group1 leave");
 
-//    dispatch_group_async(group, dispatch_get_main_queue(), ^{
-//        [NSThread sleepForTimeInterval:2];
-//        NSLog(@"%@",NSStringFromSelector(_cmd));
-//        dispatch_group_leave(group);
-//    });
+    });
 }
 
 - (void)func2WithGroup:(dispatch_group_t)group
 {
     dispatch_group_enter(group);
-    dispatch_group_async(group, dispatch_get_main_queue(), ^{
-        NSLog(@"%@",NSStringFromSelector(_cmd));
+    NSLog(@"7,after group2 enter");
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [NSThread sleepForTimeInterval:1];
         dispatch_group_leave(group);
-        NSLog(@"%@",[NSThread currentThread]);
-
+        NSLog(@"8, after group2 leave");
     });
 
 }
