@@ -5,3 +5,4 @@
 - [iPhone 6 Plus resolution confusion: Xcode or Apple's website? for development](https://stackoverflow.com/questions/25755443/iphone-6-plus-resolution-confusion-xcode-or-apples-website-for-development)
 - [iPhone 6 Screens Demystified](https://www.paintcodeapp.com/news/iphone-6-screens-demystified)
 - [iOS: 如何正确的绘制1像素的线](http://www.cocoachina.com/ios/20150629/12278.html)
+- [KRDrawLineView](https://github.com/gurongkang/KRDrawLineView)
