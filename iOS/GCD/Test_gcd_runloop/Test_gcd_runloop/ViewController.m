@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 @property (nonatomic, assign) NSUInteger runLoopCount;
+@property (nonatomic, strong) UILabel *label;
 
 @end
 
@@ -24,15 +25,19 @@
     CFRunLoopObserverRef obser=  CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopBeforeWaiting|kCFRunLoopAfterWaiting, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
         if (activity == kCFRunLoopBeforeWaiting)
         {
-            NSLog(@"kCFRunLoopBeforeWaiting");
+//            NSLog(@"kCFRunLoopBeforeWaiting");
         }
         else if (activity == kCFRunLoopAfterWaiting)
         {
             self.runLoopCount++;
-            NSLog(@"kCFRunLoopAfterWaiting");
+//            NSLog(@"kCFRunLoopAfterWaiting");
         }
     });
     
+    self.label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    self.label.textColor = [UIColor redColor];
+    self.label.text = @"label";
+    [self.view addSubview:self.label];
     CFRunLoopAddObserver([[NSRunLoop mainRunLoop] getCFRunLoop], obser, kCFRunLoopCommonModes);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [NSTimer scheduledTimerWithTimeInterval:6 repeats:0 block:^(NSTimer * _Nonnull timer) {
@@ -40,8 +45,8 @@
 //        }];
     });
     //用perform会有不同吗
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [NSTimer scheduledTimerWithTimeInterval:6 repeats:0 block:^(NSTimer * _Nonnull timer) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [NSTimer scheduledTimerWithTimeInterval:1 repeats:0 block:^(NSTimer * _Nonnull timer) {
                 [self perform:@(5)];
             }];
         });
@@ -75,6 +80,7 @@
         return;
     }
     NSLog(@"in count %@,runloop count %@",count,@(self.runLoopCount));
+    self.label.text = [@(self.runLoopCount) stringValue];
     [self performSelector:@selector(perform:) withObject:@(count.integerValue - 1) afterDelay:0];
 }
 

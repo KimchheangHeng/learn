@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "ViewControllerWindow1.h"
+#import "TestViewController.h"
 
 @interface AppDelegate ()
 
@@ -39,34 +40,39 @@
 - (void)nextWindow
 {
     UIWindow *window1 = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    window1.windowLevel = UIWindowLevelStatusBar + 2;
+    window1.windowLevel = UIWindowLevelStatusBar + 100;
     ViewControllerWindow1 *vc = [ViewControllerWindow1 new];
     window1.rootViewController = vc;
     window1.hidden = NO;
     
 //    [window1 makeKeyAndVisible];
+    
     UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(100, 400, 100, 100)];
     view1.backgroundColor = [UIColor blueColor];
     [window1 addSubview:view1];
 
     //window1 一定要被本类持有
     self.secondWindow = window1;
-    self.secondWindow = nil;
+//    self.secondWindow = nil;
     [self addNewView];
 
-//    [UIView animateWithDuration:0.3 animations:^{
-//        self.secondWindow.alpha = 0;
-//    } completion:^(BOOL finished) {
+    [UIView animateWithDuration:0.3 animations:^{
+        self.secondWindow.alpha = 0;
+    } completion:^(BOOL finished) {
 //        self.secondWindow = nil;
 //        [self addNewView];
-//    }];
+    }];
 }
 
 - (void)addNewView
 {
-    UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(200, 300, 100, 100)];
-    view1.backgroundColor = [UIColor orangeColor];
-    [self.vc.view addSubview:view1];
+//    UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(200, 300, 100, 100)];
+//    view1.backgroundColor = [UIColor orangeColor];
+//    [self.vc.view addSubview:view1];
+
+    TestViewController *vc1 = [[TestViewController alloc] init];
+    vc1.view.backgroundColor = [UIColor orangeColor];
+    [self addVCAsSubViewInVC:self.vc inView:self.vc.view subVC:vc1];
 
 }
 
@@ -95,6 +101,21 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (void)addVCAsSubViewInVC:(UIViewController *)containerVC inView:(UIView *)inView subVC:(UIViewController *)subVC;
+{
+    if (containerVC != nil && subVC.view != nil && subVC != nil)
+    {
+        [containerVC addChildViewController:subVC];
+        [inView addSubview:subVC.view];
+        [subVC didMoveToParentViewController:containerVC];          // 3
+    }
+    else
+    {
+        NSAssert(0, @"");
+    }
+}
+
 
 
 @end
