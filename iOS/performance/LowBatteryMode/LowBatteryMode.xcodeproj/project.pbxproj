@@ -200,6 +200,11 @@
 					60A7D5292022C36800285738 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					60A7D5412022C36800285738 = {
 						CreatedOnToolsVersion = 9.2;
