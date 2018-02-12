@@ -1,0 +1,19 @@
+
+<schema name="kdebug-signpost-interval" topology="XRTD50_CC22_R_TypeID">
+    <column engineeringType="XRRecordedEventTimestampTypeID" engineeringName="Start" mnemonic="start" topologyField="XRTraceRelativeTimestampFieldID"></column>
+    <column engineeringType="XRDurationTypeID" engineeringName="Duration" mnemonic="duration" topologyField="XRDurationFieldID"></column>
+    <column engineeringType="XRProcessTypeID" engineeringName="Process" mnemonic="process" topologyField="XRCategory1FieldID"></column>
+    <column engineeringType="XRSignpostNameTypeID" engineeringName="Name" mnemonic="name" topologyField="XRCategory2FieldID"></column>
+    <column engineeringType="XRThreadTypeID" engineeringName="Start Thread" mnemonic="start-thread"></column>
+    <column engineeringType="XRKDebugArgumentTypeID" engineeringName="Start Arg1" mnemonic="start-arg1"></column>
+    <column engineeringType="XRKDebugArgumentTypeID" engineeringName="Start Arg2" mnemonic="start-arg2"></column>
+    <column engineeringType="XRKDebugArgumentTypeID" engineeringName="Start Arg3" mnemonic="start-arg3"></column>
+    <column engineeringType="XRKDebugArgumentTypeID" engineeringName="Start Arg4" mnemonic="start-arg4"></column>
+    <column engineeringType="XRBacktraceTypeID" engineeringName="Start Backtrace" mnemonic="start-backtrace"></column>
+    <column engineeringType="XRThreadTypeID" engineeringName="End Thread" mnemonic="end-thread"></column>
+    <column engineeringType="XRKDebugArgumentTypeID" engineeringName="End Arg1" mnemonic="end-arg1"></column>
+    <column engineeringType="XRKDebugArgumentTypeID" engineeringName="End Arg2" mnemonic="end-arg2"></column>
+    <column engineeringType="XRKDebugArgumentTypeID" engineeringName="End Arg3" mnemonic="end-arg3"></column>
+    <column engineeringType="XRKDebugArgumentTypeID" engineeringName="End Arg4" mnemonic="end-arg4"></column>
+    <column engineeringType="XRBacktraceTypeID" engineeringName="End Backtrace" mnemonic="end-backtrace"></column>
+</schema>

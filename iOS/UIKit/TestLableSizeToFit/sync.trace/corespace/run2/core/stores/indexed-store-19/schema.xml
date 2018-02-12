@@ -1,0 +1,19 @@
+
+<schema name="syscall" topology="XRTD50_CC22_R_TypeID">
+    <column engineeringType="XRStartTimeTypeID" engineeringName="Start Time" mnemonic="start" topologyField="XRTraceRelativeTimestampFieldID"></column>
+    <column engineeringType="XRDurationTypeID" engineeringName="Duration" mnemonic="duration" topologyField="XRDurationFieldID"></column>
+    <column engineeringType="XRThreadTypeID" engineeringName="Thread" mnemonic="thread" topologyField="XRCategory1FieldID"></column>
+    <column engineeringType="XRSystemCallNameTypeID" engineeringName="Call" mnemonic="call" topologyField="XRCategory2FieldID"></column>
+    <column engineeringType="XRProcessTypeID" engineeringName="Process" mnemonic="process"></column>
+    <column engineeringType="XRDurationOnCPUTypeID" engineeringName="CPU Time" mnemonic="cputime"></column>
+    <column engineeringType="XRDurationWaitingTypeID" engineeringName="Wait Time" mnemonic="waittime"></column>
+    <column engineeringType="XRSystemCallArgumentTypeID" engineeringName="Arg1" mnemonic="arg1"></column>
+    <column engineeringType="XRSystemCallArgumentTypeID" engineeringName="Arg2" mnemonic="arg2"></column>
+    <column engineeringType="XRSystemCallArgumentTypeID" engineeringName="Arg3" mnemonic="arg3"></column>
+    <column engineeringType="XRSystemCallArgumentTypeID" engineeringName="Arg4" mnemonic="arg4"></column>
+    <column engineeringType="XRSystemCallReturnCodeTypeID" engineeringName="Return" mnemonic="return"></column>
+    <column engineeringType="XRSystemCallReturnCodeTypeID" engineeringName="errno" mnemonic="errno"></column>
+    <column engineeringType="XRBacktraceTypeID" engineeringName="Stack" mnemonic="backtrace"></column>
+    <column engineeringType="XRNarrativeEntryTypeID" engineeringName="Note" mnemonic="note"></column>
+    <column engineeringType="XRNarrativeEntryTypeID" engineeringName="Signature" mnemonic="signature"></column>
+</schema>

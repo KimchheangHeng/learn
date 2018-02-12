@@ -1,0 +1,10 @@
+
+<schema name="context-switch" topology="XRT50_C22_TypeID">
+    <column engineeringType="XRRecordedEventTimestampTypeID" engineeringName="Start Time" mnemonic="time" topologyField="XRTraceRelativeTimestampFieldID"></column>
+    <column engineeringType="XRThreadTypeID" engineeringName="Thread" mnemonic="thread" topologyField="XRCategory1FieldID"></column>
+    <column engineeringType="XRSchedulingEventTypeID" engineeringName="Event" mnemonic="event"></column>
+    <column engineeringType="XRProcessTypeID" engineeringName="Process" mnemonic="process"></column>
+    <column engineeringType="XRCPUCoreTypeID" engineeringName="Core" mnemonic="cpu"></column>
+    <column engineeringType="XRSchedulingPriorityTypeID" engineeringName="Priority" mnemonic="priority"></column>
+    <column engineeringType="XRNarrativeEntryTypeID" engineeringName="Note" mnemonic="note"></column>
+</schema>

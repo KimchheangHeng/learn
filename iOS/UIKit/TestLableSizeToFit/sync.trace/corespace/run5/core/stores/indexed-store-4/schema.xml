@@ -1,0 +1,8 @@
+
+<schema name="syscall-name-map" topology="XRT50_C22_TypeID">
+    <column engineeringType="XRRecordedEventTimestampTypeID" engineeringName="Timestamp" mnemonic="time" topologyField="XRTraceRelativeTimestampFieldID"></column>
+    <column engineeringType="XRSystemCallNameTypeID" engineeringName="Name" mnemonic="name" topologyField="XRCategory1FieldID"></column>
+    <column engineeringType="XRKDebugClassTypeID" engineeringName="Class" mnemonic="class"></column>
+    <column engineeringType="XRKDebugSubclassTypeID" engineeringName="Subclass" mnemonic="subclass"></column>
+    <column engineeringType="XRKDebugCodeTypeID" engineeringName="Code" mnemonic="code"></column>
+</schema>
