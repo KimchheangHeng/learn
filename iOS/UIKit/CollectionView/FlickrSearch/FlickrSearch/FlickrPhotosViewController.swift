@@ -228,11 +228,13 @@ extension FlickrPhotosViewController {
                                  moveItemAt sourceIndexPath: IndexPath,
                                                      to destinationIndexPath: IndexPath) {
         
-        var sourceResults = searches[(sourceIndexPath as NSIndexPath).section].searchResults
-        let flickrPhoto = sourceResults.remove(at: (sourceIndexPath as NSIndexPath).row)
+        var sourceResults = searches[sourceIndexPath.section].searchResults
+        let flickrPhoto = sourceResults.remove(at: sourceIndexPath.row)
+        searches[sourceIndexPath.section].searchResults = sourceResults
         
-        var destinationResults = searches[(destinationIndexPath as NSIndexPath).section].searchResults
-        destinationResults.insert(flickrPhoto, at: (destinationIndexPath as NSIndexPath).row)
+        var destinationResults = searches[destinationIndexPath.section].searchResults
+        destinationResults.insert(flickrPhoto, at: destinationIndexPath.row)
+        searches[destinationIndexPath.section].searchResults = destinationResults
     }
 }
 
