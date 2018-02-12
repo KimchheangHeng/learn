@@ -74,7 +74,7 @@ class FlickrPhoto : Equatable {
       DispatchQueue.main.async {
         completion(self, nil)
       }
-    }).resume()
+    }) .resume()
   }
   
   func sizeToFillWidthOfSize(_ size:CGSize) -> CGSize {
