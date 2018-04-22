@@ -434,7 +434,7 @@
 				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = Test_GCD_Leave/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "c.Test-GCD-Leave";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,7 +448,7 @@
 				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = Test_GCD_Leave/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "c.Test-GCD-Leave";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
