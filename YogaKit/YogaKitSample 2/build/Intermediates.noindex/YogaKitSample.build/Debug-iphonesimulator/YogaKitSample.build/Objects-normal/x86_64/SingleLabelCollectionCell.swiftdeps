@@ -1,0 +1,704 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SingleLabelCollectionCell"
+provides-nominal:
+- "13YogaKitSample25SingleLabelCollectionCellC"
+provides-member:
+- ["13YogaKitSample25SingleLabelCollectionCellC", ""]
+provides-dynamic-lookup:
+- "label"
+- "layoutSubviews"
+depends-top-level:
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "CGRect"
+- "NSCoder"
+- "SingleLabelCollectionCell"
+- !private "StringLiteralType"
+- "UICollectionViewCell"
+- "UILabel"
+- !private "UIView"
+- !private "fatalError"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- ["So15CALayerDelegateP", "UILabel"]
+- !private ["So15CALayerDelegateP", "UIView"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "configureLayout"]
+- !private ["So15CALayerDelegateP", "contentView"]
+- !private ["So15CALayerDelegateP", "fatalError"]
+- !private ["So15CALayerDelegateP", "frame"]
+- ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "label"]
+- !private ["So15CALayerDelegateP", "layoutSubviews"]
+- !private ["So15CALayerDelegateP", "numberOfLines"]
+- !private ["So15CALayerDelegateP", "textAlignment"]
+- !private ["So15CALayerDelegateP", "yoga"]
+- ["SC6CGRectV", "zero"]
+- ["s7CVarArgP", "UILabel"]
+- !private ["s7CVarArgP", "UIView"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addSubview"]
+- !private ["s7CVarArgP", "applyLayout"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "configureLayout"]
+- !private ["s7CVarArgP", "contentView"]
+- !private ["s7CVarArgP", "fatalError"]
+- !private ["s7CVarArgP", "flexDirection"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "height"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEnabled"]
+- !private ["s7CVarArgP", "isIncludedInLayout"]
+- !private ["s7CVarArgP", "justifyContent"]
+- !private ["s7CVarArgP", "label"]
+- !private ["s7CVarArgP", "layoutSubviews"]
+- !private ["s7CVarArgP", "lightGray"]
+- !private ["s7CVarArgP", "marginHorizontal"]
+- !private ["s7CVarArgP", "numberOfLines"]
+- !private ["s7CVarArgP", "textAlignment"]
+- !private ["s7CVarArgP", "yoga"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "UILabel"]
+- !private ["s28CustomDebugStringConvertibleP", "UIView"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "applyLayout"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "configureLayout"]
+- !private ["s28CustomDebugStringConvertibleP", "contentView"]
+- !private ["s28CustomDebugStringConvertibleP", "fatalError"]
+- !private ["s28CustomDebugStringConvertibleP", "flexDirection"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "isIncludedInLayout"]
+- !private ["s28CustomDebugStringConvertibleP", "justifyContent"]
+- !private ["s28CustomDebugStringConvertibleP", "label"]
+- !private ["s28CustomDebugStringConvertibleP", "layoutSubviews"]
+- !private ["s28CustomDebugStringConvertibleP", "lightGray"]
+- !private ["s28CustomDebugStringConvertibleP", "marginHorizontal"]
+- !private ["s28CustomDebugStringConvertibleP", "numberOfLines"]
+- !private ["s28CustomDebugStringConvertibleP", "textAlignment"]
+- !private ["s28CustomDebugStringConvertibleP", "yoga"]
+- ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "lightGray"]
+- ["s17CustomReflectableP", "zero"]
+- ["s23CustomStringConvertibleP", "UILabel"]
+- !private ["s23CustomStringConvertibleP", "UIView"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addSubview"]
+- !private ["s23CustomStringConvertibleP", "applyLayout"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "configureLayout"]
+- !private ["s23CustomStringConvertibleP", "contentView"]
+- !private ["s23CustomStringConvertibleP", "fatalError"]
+- !private ["s23CustomStringConvertibleP", "flexDirection"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "height"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEnabled"]
+- !private ["s23CustomStringConvertibleP", "isIncludedInLayout"]
+- !private ["s23CustomStringConvertibleP", "justifyContent"]
+- !private ["s23CustomStringConvertibleP", "label"]
+- !private ["s23CustomStringConvertibleP", "layoutSubviews"]
+- !private ["s23CustomStringConvertibleP", "lightGray"]
+- !private ["s23CustomStringConvertibleP", "marginHorizontal"]
+- !private ["s23CustomStringConvertibleP", "numberOfLines"]
+- !private ["s23CustomStringConvertibleP", "textAlignment"]
+- !private ["s23CustomStringConvertibleP", "yoga"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "lightGray"]
+- ["s9DecodableP", "zero"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "lightGray"]
+- ["s9EncodableP", "zero"]
+- ["s9EquatableP", "UILabel"]
+- !private ["s9EquatableP", "UIView"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "addSubview"]
+- !private ["s9EquatableP", "applyLayout"]
+- !private ["s9EquatableP", "backgroundColor"]
+- !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "center"]
+- !private ["s9EquatableP", "column"]
+- !private ["s9EquatableP", "configureLayout"]
+- !private ["s9EquatableP", "contentView"]
+- !private ["s9EquatableP", "fatalError"]
+- !private ["s9EquatableP", "flexDirection"]
+- !private ["s9EquatableP", "flexEnd"]
+- !private ["s9EquatableP", "frame"]
+- !private ["s9EquatableP", "height"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEnabled"]
+- !private ["s9EquatableP", "isIncludedInLayout"]
+- !private ["s9EquatableP", "justifyContent"]
+- !private ["s9EquatableP", "label"]
+- !private ["s9EquatableP", "layoutSubviews"]
+- !private ["s9EquatableP", "lightGray"]
+- !private ["s9EquatableP", "marginHorizontal"]
+- !private ["s9EquatableP", "numberOfLines"]
+- !private ["s9EquatableP", "textAlignment"]
+- !private ["s9EquatableP", "yoga"]
+- ["s9EquatableP", "zero"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "lightGray"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "UILabel"]
+- !private ["s8HashableP", "UIView"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "addSubview"]
+- !private ["s8HashableP", "applyLayout"]
+- !private ["s8HashableP", "backgroundColor"]
+- !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "center"]
+- !private ["s8HashableP", "column"]
+- !private ["s8HashableP", "configureLayout"]
+- !private ["s8HashableP", "contentView"]
+- !private ["s8HashableP", "fatalError"]
+- !private ["s8HashableP", "flexDirection"]
+- !private ["s8HashableP", "flexEnd"]
+- !private ["s8HashableP", "frame"]
+- !private ["s8HashableP", "height"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "isEnabled"]
+- !private ["s8HashableP", "isIncludedInLayout"]
+- !private ["s8HashableP", "justifyContent"]
+- !private ["s8HashableP", "label"]
+- !private ["s8HashableP", "layoutSubviews"]
+- !private ["s8HashableP", "lightGray"]
+- !private ["s8HashableP", "marginHorizontal"]
+- !private ["s8HashableP", "numberOfLines"]
+- !private ["s8HashableP", "textAlignment"]
+- !private ["s8HashableP", "yoga"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", "UILabel"]
+- !private ["So8NSCodingP", "UIView"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "addSubview"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "configureLayout"]
+- !private ["So8NSCodingP", "contentView"]
+- !private ["So8NSCodingP", "fatalError"]
+- !private ["So8NSCodingP", "frame"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "label"]
+- !private ["So8NSCodingP", "layoutSubviews"]
+- !private ["So8NSCodingP", "lightGray"]
+- !private ["So8NSCodingP", "numberOfLines"]
+- !private ["So8NSCodingP", "textAlignment"]
+- !private ["So8NSCodingP", "yoga"]
+- !private ["So9NSCopyingP", "lightGray"]
+- !private ["So21NSItemProviderReadingP", "lightGray"]
+- !private ["So21NSItemProviderWritingP", "lightGray"]
+- ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "UILabel"]
+- !private ["So8NSObjectC", "UIView"]
+- !private ["So8NSObjectC", "addSubview"]
+- !private ["So8NSObjectC", "applyLayout"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "configureLayout"]
+- !private ["So8NSObjectC", "contentView"]
+- !private ["So8NSObjectC", "fatalError"]
+- !private ["So8NSObjectC", "flexDirection"]
+- !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectC", "height"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEnabled"]
+- !private ["So8NSObjectC", "isIncludedInLayout"]
+- !private ["So8NSObjectC", "justifyContent"]
+- ["So8NSObjectC", "label"]
+- ["So8NSObjectC", "layoutSubviews"]
+- !private ["So8NSObjectC", "lightGray"]
+- !private ["So8NSObjectC", "marginHorizontal"]
+- !private ["So8NSObjectC", "numberOfLines"]
+- !private ["So8NSObjectC", "textAlignment"]
+- !private ["So8NSObjectC", "yoga"]
+- ["So16NSObjectProtocolP", "UILabel"]
+- !private ["So16NSObjectProtocolP", "UIView"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "addSubview"]
+- !private ["So16NSObjectProtocolP", "applyLayout"]
+- !private ["So16NSObjectProtocolP", "backgroundColor"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "configureLayout"]
+- !private ["So16NSObjectProtocolP", "contentView"]
+- !private ["So16NSObjectProtocolP", "fatalError"]
+- !private ["So16NSObjectProtocolP", "flexDirection"]
+- !private ["So16NSObjectProtocolP", "frame"]
+- !private ["So16NSObjectProtocolP", "height"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isEnabled"]
+- !private ["So16NSObjectProtocolP", "isIncludedInLayout"]
+- !private ["So16NSObjectProtocolP", "justifyContent"]
+- !private ["So16NSObjectProtocolP", "label"]
+- !private ["So16NSObjectProtocolP", "layoutSubviews"]
+- !private ["So16NSObjectProtocolP", "lightGray"]
+- !private ["So16NSObjectProtocolP", "marginHorizontal"]
+- !private ["So16NSObjectProtocolP", "numberOfLines"]
+- !private ["So16NSObjectProtocolP", "textAlignment"]
+- !private ["So16NSObjectProtocolP", "yoga"]
+- !private ["So14NSSecureCodingP", "lightGray"]
+- !private ["SC15NSTextAlignmentO", "center"]
+- !private ["Sq", "lightGray"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "center"]
+- !private ["s16RawRepresentableP", "column"]
+- !private ["s16RawRepresentableP", "flexEnd"]
+- !private ["s8SequenceP", "init"]
+- ["13YogaKitSample25SingleLabelCollectionCellC", "CGRect"]
+- ["13YogaKitSample25SingleLabelCollectionCellC", "NSCoder"]
+- ["13YogaKitSample25SingleLabelCollectionCellC", "UILabel"]
+- !private ["13YogaKitSample25SingleLabelCollectionCellC", "UIView"]
+- !private ["13YogaKitSample25SingleLabelCollectionCellC", "contentView"]
+- ["13YogaKitSample25SingleLabelCollectionCellC", "deinit"]
+- !private ["13YogaKitSample25SingleLabelCollectionCellC", "fatalError"]
+- ["13YogaKitSample25SingleLabelCollectionCellC", "init"]
+- ["13YogaKitSample25SingleLabelCollectionCellC", "label"]
+- ["13YogaKitSample25SingleLabelCollectionCellC", "layoutSubviews"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["So29UIAccessibilityIdentificationP", "UILabel"]
+- !private ["So29UIAccessibilityIdentificationP", "UIView"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "configureLayout"]
+- !private ["So29UIAccessibilityIdentificationP", "contentView"]
+- !private ["So29UIAccessibilityIdentificationP", "fatalError"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "label"]
+- !private ["So29UIAccessibilityIdentificationP", "layoutSubviews"]
+- !private ["So29UIAccessibilityIdentificationP", "numberOfLines"]
+- !private ["So29UIAccessibilityIdentificationP", "textAlignment"]
+- !private ["So29UIAccessibilityIdentificationP", "yoga"]
+- ["So12UIAppearanceP", "UILabel"]
+- !private ["So12UIAppearanceP", "UIView"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "configureLayout"]
+- !private ["So12UIAppearanceP", "contentView"]
+- !private ["So12UIAppearanceP", "fatalError"]
+- !private ["So12UIAppearanceP", "frame"]
+- ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "label"]
+- !private ["So12UIAppearanceP", "layoutSubviews"]
+- !private ["So12UIAppearanceP", "numberOfLines"]
+- !private ["So12UIAppearanceP", "textAlignment"]
+- !private ["So12UIAppearanceP", "yoga"]
+- ["So21UIAppearanceContainerP", "UILabel"]
+- !private ["So21UIAppearanceContainerP", "UIView"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "addSubview"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "configureLayout"]
+- !private ["So21UIAppearanceContainerP", "contentView"]
+- !private ["So21UIAppearanceContainerP", "fatalError"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "label"]
+- !private ["So21UIAppearanceContainerP", "layoutSubviews"]
+- !private ["So21UIAppearanceContainerP", "numberOfLines"]
+- !private ["So21UIAppearanceContainerP", "textAlignment"]
+- !private ["So21UIAppearanceContainerP", "yoga"]
+- ["So24UICollectionReusableViewC", "CGRect"]
+- ["So24UICollectionReusableViewC", "NSCoder"]
+- ["So24UICollectionReusableViewC", "UILabel"]
+- !private ["So24UICollectionReusableViewC", "UIView"]
+- !private ["So24UICollectionReusableViewC", "contentView"]
+- !private ["So24UICollectionReusableViewC", "fatalError"]
+- ["So24UICollectionReusableViewC", "init"]
+- ["So24UICollectionReusableViewC", "label"]
+- ["So24UICollectionReusableViewC", "layoutSubviews"]
+- ["So20UICollectionViewCellC", "CGRect"]
+- ["So20UICollectionViewCellC", "NSCoder"]
+- ["So20UICollectionViewCellC", "UILabel"]
+- !private ["So20UICollectionViewCellC", "UIView"]
+- ["So20UICollectionViewCellC", ""]
+- !private ["So20UICollectionViewCellC", "contentView"]
+- !private ["So20UICollectionViewCellC", "fatalError"]
+- ["So20UICollectionViewCellC", "init"]
+- ["So20UICollectionViewCellC", "label"]
+- ["So20UICollectionViewCellC", "layoutSubviews"]
+- !private ["So7UIColorC", "lightGray"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "frame"]
+- ["So30UIContentSizeCategoryAdjustingP", "init"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "numberOfLines"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textAlignment"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "yoga"]
+- ["So17UICoordinateSpaceP", "UILabel"]
+- !private ["So17UICoordinateSpaceP", "UIView"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "configureLayout"]
+- !private ["So17UICoordinateSpaceP", "contentView"]
+- !private ["So17UICoordinateSpaceP", "fatalError"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "label"]
+- !private ["So17UICoordinateSpaceP", "layoutSubviews"]
+- !private ["So17UICoordinateSpaceP", "numberOfLines"]
+- !private ["So17UICoordinateSpaceP", "textAlignment"]
+- !private ["So17UICoordinateSpaceP", "yoga"]
+- ["So13UIDynamicItemP", "UILabel"]
+- !private ["So13UIDynamicItemP", "UIView"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "configureLayout"]
+- !private ["So13UIDynamicItemP", "contentView"]
+- !private ["So13UIDynamicItemP", "fatalError"]
+- !private ["So13UIDynamicItemP", "frame"]
+- ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "label"]
+- !private ["So13UIDynamicItemP", "layoutSubviews"]
+- !private ["So13UIDynamicItemP", "numberOfLines"]
+- !private ["So13UIDynamicItemP", "textAlignment"]
+- !private ["So13UIDynamicItemP", "yoga"]
+- ["So18UIFocusEnvironmentP", "UILabel"]
+- !private ["So18UIFocusEnvironmentP", "UIView"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "configureLayout"]
+- !private ["So18UIFocusEnvironmentP", "contentView"]
+- !private ["So18UIFocusEnvironmentP", "fatalError"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "label"]
+- !private ["So18UIFocusEnvironmentP", "layoutSubviews"]
+- !private ["So18UIFocusEnvironmentP", "numberOfLines"]
+- !private ["So18UIFocusEnvironmentP", "textAlignment"]
+- !private ["So18UIFocusEnvironmentP", "yoga"]
+- ["So11UIFocusItemP", "UILabel"]
+- !private ["So11UIFocusItemP", "UIView"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "configureLayout"]
+- !private ["So11UIFocusItemP", "contentView"]
+- !private ["So11UIFocusItemP", "fatalError"]
+- !private ["So11UIFocusItemP", "frame"]
+- ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "label"]
+- !private ["So11UIFocusItemP", "layoutSubviews"]
+- !private ["So11UIFocusItemP", "numberOfLines"]
+- !private ["So11UIFocusItemP", "textAlignment"]
+- !private ["So11UIFocusItemP", "yoga"]
+- !private ["So7UILabelC", "frame"]
+- ["So7UILabelC", "init"]
+- !private ["So7UILabelC", "numberOfLines"]
+- !private ["So7UILabelC", "textAlignment"]
+- !private ["So7UILabelC", "yoga"]
+- ["So30UIPasteConfigurationSupportingP", "UILabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIView"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "configureLayout"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentView"]
+- !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "label"]
+- !private ["So30UIPasteConfigurationSupportingP", "layoutSubviews"]
+- !private ["So30UIPasteConfigurationSupportingP", "numberOfLines"]
+- !private ["So30UIPasteConfigurationSupportingP", "textAlignment"]
+- !private ["So30UIPasteConfigurationSupportingP", "yoga"]
+- ["So11UIResponderC", "CGRect"]
+- ["So11UIResponderC", "NSCoder"]
+- ["So11UIResponderC", "UILabel"]
+- !private ["So11UIResponderC", "UIView"]
+- !private ["So11UIResponderC", "addSubview"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- !private ["So11UIResponderC", "bounds"]
+- !private ["So11UIResponderC", "configureLayout"]
+- !private ["So11UIResponderC", "contentView"]
+- !private ["So11UIResponderC", "fatalError"]
+- !private ["So11UIResponderC", "frame"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "label"]
+- ["So11UIResponderC", "layoutSubviews"]
+- !private ["So11UIResponderC", "numberOfLines"]
+- !private ["So11UIResponderC", "textAlignment"]
+- !private ["So11UIResponderC", "yoga"]
+- ["So30UIResponderStandardEditActionsP", "UILabel"]
+- !private ["So30UIResponderStandardEditActionsP", "UIView"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "configureLayout"]
+- !private ["So30UIResponderStandardEditActionsP", "contentView"]
+- !private ["So30UIResponderStandardEditActionsP", "fatalError"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "label"]
+- !private ["So30UIResponderStandardEditActionsP", "layoutSubviews"]
+- !private ["So30UIResponderStandardEditActionsP", "numberOfLines"]
+- !private ["So30UIResponderStandardEditActionsP", "textAlignment"]
+- !private ["So30UIResponderStandardEditActionsP", "yoga"]
+- ["So18UITraitEnvironmentP", "UILabel"]
+- !private ["So18UITraitEnvironmentP", "UIView"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "addSubview"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "configureLayout"]
+- !private ["So18UITraitEnvironmentP", "contentView"]
+- !private ["So18UITraitEnvironmentP", "fatalError"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "label"]
+- !private ["So18UITraitEnvironmentP", "layoutSubviews"]
+- !private ["So18UITraitEnvironmentP", "numberOfLines"]
+- !private ["So18UITraitEnvironmentP", "textAlignment"]
+- !private ["So18UITraitEnvironmentP", "yoga"]
+- ["So6UIViewC", "CGRect"]
+- ["So6UIViewC", "NSCoder"]
+- ["So6UIViewC", "UILabel"]
+- !private ["So6UIViewC", "UIView"]
+- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "bounds"]
+- !private ["So6UIViewC", "configureLayout"]
+- !private ["So6UIViewC", "contentView"]
+- !private ["So6UIViewC", "fatalError"]
+- !private ["So6UIViewC", "frame"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "label"]
+- ["So6UIViewC", "layoutSubviews"]
+- !private ["So6UIViewC", "numberOfLines"]
+- !private ["So6UIViewC", "textAlignment"]
+- !private ["So6UIViewC", "yoga"]
+- !private ["SC15YGFlexDirectionO", "column"]
+- !private ["SC9YGJustifyO", "flexEnd"]
+- !private ["So8YGLayoutC", "applyLayout"]
+- !private ["So8YGLayoutC", "flexDirection"]
+- !private ["So8YGLayoutC", "height"]
+- !private ["So8YGLayoutC", "isEnabled"]
+- !private ["So8YGLayoutC", "isIncludedInLayout"]
+- !private ["So8YGLayoutC", "justifyContent"]
+- !private ["So8YGLayoutC", "marginHorizontal"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "UILabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIView"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "configureLayout"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "fatalError"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "label"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layoutSubviews"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "numberOfLines"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textAlignment"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "yoga"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "lightGray"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UILabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "applyLayout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "configureLayout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "flexDirection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "height"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isIncludedInLayout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "justifyContent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "label"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layoutSubviews"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lightGray"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "marginHorizontal"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numberOfLines"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textAlignment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "yoga"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "lightGray"]
+- ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "So15CALayerDelegateP"
+- "SC6CGRectV"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "SC15NSTextAlignmentO"
+- !private "Sq"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- "13YogaKitSample25SingleLabelCollectionCellC"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So24UICollectionReusableViewC"
+- "So20UICollectionViewCellC"
+- !private "So7UIColorC"
+- "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- !private "SC15YGFlexDirectionO"
+- !private "SC9YGJustifyO"
+- !private "So8YGLayoutC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/YogaKit/YogaKit.framework/Modules/YogaKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/YogaKit/YogaKit.framework/Headers/UIView+Yoga.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/Yoga.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/Yoga-umbrella.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/YogaKit/YogaKit.framework/Headers/YogaKit-umbrella.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListKit-umbrella.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBatchUpdateData.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterDataSource.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSupplementaryViewSource.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/NSString+IGListDiffable.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/NSNumber+IGListDiffable.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiffable.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSectionType.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListWorkingRangeDelegate.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListUpdatingDelegate.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListScrollDelegate.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdaterDelegate.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterDelegate.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDisplayDelegate.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiff.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMoveIndexPath.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListStackedSectionController.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSingleSectionController.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSectionController.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListReloadDataUpdater.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdater.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapter.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/YGEnums.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/YGMacros.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMacros.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListExperiments.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/YogaKit/YogaKit.framework/Headers/YogaKit-Swift.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiffKit.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListKit.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListIndexPathResult.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListIndexSetResult.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAssert.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Headers/YGNodeList.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/YogaKit/YogaKit.framework/Headers/YGLayout.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListGridCollectionViewLayout.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionContext.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionView.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMoveIndex.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCompatibility.h"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/Yoga/yoga.framework/Modules/module.modulemap"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/YogaKit/YogaKit.framework/Modules/module.modulemap"
+- "/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "a3d4c4d602315b042346aea237ed5d34"

@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "d40cec23a3368d80ad4c73dc147c257a"
+build_time: [1524442399, 926443000]
+inputs:
+  "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/YogaKitSample/Views/SingleLabelCollectionCell.swift": [1524150955, 0]
+  "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/YogaKitSample/ViewControllers/LayoutInclusionViewController.swift": [1524150955, 0]
+  "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/YogaKitSample/ExamplesViewController.swift": [1524150955, 0]
+  "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/YogaKitSample/ViewControllers/BasicViewController.swift": [1524150955, 0]
+  "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/YogaKitSample/AppDelegate.swift": [1524150955, 0]

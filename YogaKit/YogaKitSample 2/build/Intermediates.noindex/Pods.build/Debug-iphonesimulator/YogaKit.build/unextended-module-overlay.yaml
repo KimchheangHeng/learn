@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Products/Debug-iphonesimulator/YogaKit.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/huahuahu/Downloads/YogaKit/YogaKitSample 2/build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/YogaKit.build/unextended-module.modulemap',
+    }]
+  }]
+}

@@ -1,0 +1,214 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "%"
+- "%"
+- "%"
+- "%"
+provides-nominal:
+- "SC7YGValueV"
+provides-member:
+- ["Si", ""]
+- ["Sf", ""]
+- ["12CoreGraphics7CGFloatV", ""]
+- ["SC7YGValueV", ""]
+- ["Si", "%"]
+- ["Sf", "%"]
+- ["12CoreGraphics7CGFloatV", "%"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "CGFloat"
+- "ExpressibleByFloatLiteral"
+- "ExpressibleByIntegerLiteral"
+- "Float"
+- "Int"
+- "YGValue"
+depends-member:
+- !private ["s19BinaryFloatingPointP", "Float"]
+- !private ["s19BinaryFloatingPointP", "YGValue"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13BinaryIntegerP", "Float"]
+- !private ["s13BinaryIntegerP", "YGValue"]
+- ["12CoreGraphics7CGFloatV", "%"]
+- ["12CoreGraphics7CGFloatV", "CGFloat"]
+- !private ["12CoreGraphics7CGFloatV", "Float"]
+- ["12CoreGraphics7CGFloatV", "YGValue"]
+- !private ["s7CVarArgP", "Float"]
+- !private ["s7CVarArgP", "YGValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s10ComparableP", "Float"]
+- !private ["s10ComparableP", "YGValue"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "YGValue"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Float"]
+- !private ["s29CustomPlaygroundQuickLookableP", "YGValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "Float"]
+- !private ["s17CustomReflectableP", "YGValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Float"]
+- !private ["s23CustomStringConvertibleP", "YGValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s9DecodableP", "Float"]
+- !private ["s9DecodableP", "YGValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "Float"]
+- !private ["s9EncodableP", "YGValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Float"]
+- !private ["s9EquatableP", "YGValue"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "percent"]
+- !private ["s9EquatableP", "point"]
+- !private ["s25ExpressibleByFloatLiteralP", "Float"]
+- ["s25ExpressibleByFloatLiteralP", "FloatLiteralType"]
+- ["s25ExpressibleByFloatLiteralP", "IntegerLiteralType"]
+- !private ["s25ExpressibleByFloatLiteralP", "YGValue"]
+- ["s25ExpressibleByFloatLiteralP", ""]
+- ["s25ExpressibleByFloatLiteralP", "_Default_FloatLiteralType"]
+- ["s25ExpressibleByFloatLiteralP", "_Default_IntegerLiteralType"]
+- ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "Float"]
+- ["s27ExpressibleByIntegerLiteralP", "FloatLiteralType"]
+- ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
+- !private ["s27ExpressibleByIntegerLiteralP", "YGValue"]
+- ["s27ExpressibleByIntegerLiteralP", ""]
+- ["s27ExpressibleByIntegerLiteralP", "_Default_FloatLiteralType"]
+- ["s27ExpressibleByIntegerLiteralP", "_Default_IntegerLiteralType"]
+- ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "Float"]
+- !private ["s17FixedWidthIntegerP", "YGValue"]
+- ["Sf", "%"]
+- ["Sf", "Float"]
+- ["Sf", "YGValue"]
+- !private ["Sf", "init"]
+- !private ["s13FloatingPointP", "Float"]
+- !private ["s13FloatingPointP", "YGValue"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s8HashableP", "Float"]
+- !private ["s8HashableP", "YGValue"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "percent"]
+- !private ["s8HashableP", "point"]
+- ["Si", "%"]
+- !private ["Si", "Float"]
+- ["Si", "Int"]
+- ["Si", "YGValue"]
+- !private ["s25LosslessStringConvertibleP", "Float"]
+- !private ["s25LosslessStringConvertibleP", "YGValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "Float"]
+- !private ["s10MirrorPathP", "YGValue"]
+- !private ["s7NumericP", "Float"]
+- !private ["s7NumericP", "YGValue"]
+- !private ["s7NumericP", "init"]
+- !private ["s16RawRepresentableP", "percent"]
+- !private ["s16RawRepresentableP", "point"]
+- !private ["s13SignedIntegerP", "Float"]
+- !private ["s13SignedIntegerP", "YGValue"]
+- !private ["s13SignedNumericP", "Float"]
+- !private ["s13SignedNumericP", "YGValue"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s10StrideableP", "Float"]
+- !private ["s10StrideableP", "YGValue"]
+- !private ["s10StrideableP", "init"]
+- !private ["SC6YGUnitO", "percent"]
+- !private ["SC6YGUnitO", "point"]
+- ["SC7YGValueV", "CGFloat"]
+- ["SC7YGValueV", "Float"]
+- ["SC7YGValueV", "FloatLiteralType"]
+- ["SC7YGValueV", "Int"]
+- ["SC7YGValueV", "IntegerLiteralType"]
+- !private ["SC7YGValueV", "YGValue"]
+- ["SC7YGValueV", "_Default_FloatLiteralType"]
+- ["SC7YGValueV", "_Default_IntegerLiteralType"]
+- ["SC7YGValueV", "deinit"]
+- ["SC7YGValueV", "init"]
+- !private ["s18_BitwiseOperationsP", "Float"]
+- !private ["s18_BitwiseOperationsP", "YGValue"]
+- !private ["s15_CVarArgAlignedP", "Float"]
+- !private ["s15_CVarArgAlignedP", "YGValue"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "Float"]
+- !private ["s22_CVarArgPassedAsDoubleP", "YGValue"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "YGValue"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "Float"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "YGValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "Float"]
+- !private ["s21_ObjectiveCBridgeableP", "YGValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- !private "s19BinaryFloatingPointP"
+- !private "s13BinaryIntegerP"
+- "12CoreGraphics7CGFloatV"
+- !private "s7CVarArgP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- "s25ExpressibleByFloatLiteralP"
+- "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "Sf"
+- !private "s13FloatingPointP"
+- !private "s8HashableP"
+- "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s7NumericP"
+- !private "s16RawRepresentableP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- !private "SC6YGUnitO"
+- "SC7YGValueV"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/Source/UIView+Yoga.h"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/Pods/Yoga/yoga/Yoga.h"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/Pods/Target Support Files/Yoga/Yoga-umbrella.h"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/Pods/Target Support Files/YogaKit/YogaKit-umbrella.h"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/Pods/Yoga/yoga/YGEnums.h"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/Pods/Yoga/yoga/YGMacros.h"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/Pods/Yoga/yoga/YGNodeList.h"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/Source/YGLayout.h"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/YogaKit.build/unextended-module.modulemap"
+- "/Users/huahuahu/GitHub/learn/yoga/YogaKit/YogaKitSample/build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Yoga.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "f39e3237939802938dbb011f77433345"

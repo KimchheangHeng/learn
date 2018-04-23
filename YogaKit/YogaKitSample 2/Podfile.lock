@@ -1,0 +1,31 @@
+PODS:
+  - IGListKit (2.1.0):
+    - IGListKit/Default (= 2.1.0)
+  - IGListKit/Default (2.1.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (2.1.0)
+  - Yoga (1.6.0)
+  - YogaKit (1.7.0):
+    - Yoga (= 1.6)
+
+DEPENDENCIES:
+  - IGListKit (~> 2.1.0)
+  - YogaKit (from `../../YogaKit.podspec`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - IGListKit
+    - Yoga
+
+EXTERNAL SOURCES:
+  YogaKit:
+    :path: "../../YogaKit.podspec"
+
+SPEC CHECKSUMS:
+  IGListKit: b826c68ef7a4ae1626c09d4d3e1ea7a169e6c36e
+  Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
+  YogaKit: e4c87adc79a9ba4407c51316d71b05f3c2ef799b
+
+PODFILE CHECKSUM: 216f8e7127767709e0e43f3711208d238fa5c404
+
+COCOAPODS: 1.5.0

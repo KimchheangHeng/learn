@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "256450ecf0fdfd9df0c37a2728759125"
+build_time: [1524443076, 501686000]
+inputs:
+  "/Users/huahuahu/Downloads/YogaKit/Source/YGLayoutExtensions.swift": !dirty [1524150955, 0]
