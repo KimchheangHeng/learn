@@ -47,11 +47,15 @@ class newUnitTest: XCTestCase {
     }
     
     
+    
+    /// 两种情况会通过
+    /// 1. 误差不超过0.1s
+    /// 2. 不超过baseline
     func testSortPerformance()  {
         self.measure {
-            var rawArray: [String] = []
+             var rawArray: [String] = []
             
-            (0...20000).forEach({
+            (0...200000).forEach({
                 rawArray.append(String.init(format: "%d", $0))
             })
             sortArray(rawArray)
