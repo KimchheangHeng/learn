@@ -1,6 +1,0 @@
-
-<schema name="target-capability" topology="XRT50_C22_TypeID">
-    <column engineeringType="XRRecordedEventTimestampTypeID" engineeringName="Timestamp" mnemonic="time" topologyField="XRTraceRelativeTimestampFieldID"></column>
-    <column engineeringType="XRCapabilityTypeID" engineeringName="Capability" mnemonic="name" topologyField="XRCategory1FieldID"></column>
-    <column engineeringType="XRVersionNumberTypeID" engineeringName="Version" mnemonic="version"></column>
-</schema>

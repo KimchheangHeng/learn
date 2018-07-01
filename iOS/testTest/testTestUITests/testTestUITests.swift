@@ -44,7 +44,7 @@ class testTestUITests: XCTestCase {
         uppercaseButton.tap()
         
         print(mylabelStaticText.title)
-//        XCTAssert(mylabelStaticText.title.count != 0)
+        XCTAssert(mylabelStaticText.title.count != 0)
         
     }
     
