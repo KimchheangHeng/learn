@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260534EE20F31F7300E6AB1F /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260534ED20F31F7300E6AB1F /* ImageViewController.swift */; };
 		2653365620F0C04A00DB3A06 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653365520F0C04A00DB3A06 /* LayoutViewController.swift */; };
 		269B351020F2E60400729473 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B350F20F2E60400729473 /* TableViewController.swift */; };
 		269B351220F2E64500729473 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B351120F2E64500729473 /* TableViewCell.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260534ED20F31F7300E6AB1F /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		2653365520F0C04A00DB3A06 /* LayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
 		269B350F20F2E60400729473 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		269B351120F2E64500729473 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				2653365520F0C04A00DB3A06 /* LayoutViewController.swift */,
 				269B350F20F2E60400729473 /* TableViewController.swift */,
 				269B351120F2E64500729473 /* TableViewCell.swift */,
+				260534ED20F31F7300E6AB1F /* ImageViewController.swift */,
 				26FB437220F0A8BB005B68DD /* Main.storyboard */,
 				26FB437520F0A8BB005B68DD /* Assets.xcassets */,
 				26FB437720F0A8BB005B68DD /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 				26FB437120F0A8BB005B68DD /* FontController.swift in Sources */,
 				2653365620F0C04A00DB3A06 /* LayoutViewController.swift in Sources */,
 				26FB436F20F0A8BB005B68DD /* AppDelegate.swift in Sources */,
+				260534EE20F31F7300E6AB1F /* ImageViewController.swift in Sources */,
 				269B351020F2E60400729473 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

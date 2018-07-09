@@ -15,6 +15,17 @@ class LayoutViewController: UIViewController {
 
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.tabBarItem.image = UIImage.init(imageLiteralResourceName: "layoutsmall")
+        self.tabBarItem.largeContentSizeImage = UIImage.init(imageLiteralResourceName: "layoutbig")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.tabBarItem.image = UIImage.init(imageLiteralResourceName: "layoutsmall")
+        self.tabBarItem.largeContentSizeImage = UIImage.init(imageLiteralResourceName: "layoutbig")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

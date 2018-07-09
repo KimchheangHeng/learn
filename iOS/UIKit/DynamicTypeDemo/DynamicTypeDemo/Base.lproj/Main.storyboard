@@ -45,6 +45,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDw-Mf-FEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--ball-->
+        <scene sceneID="6P7-ZQ-MmY">
+            <objects>
+                <viewController id="rPd-L0-oLi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IU2-zy-1DF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallBall" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1X5-Cm-VkL">
+                                <rect key="frame" x="167.5" y="213" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSy-xz-Ur9">
+                                <rect key="frame" x="173.5" y="180" width="28" height="25"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1X5-Cm-VkL" firstAttribute="centerX" secondItem="IU2-zy-1DF" secondAttribute="centerX" id="ABZ-8k-1bR"/>
+                            <constraint firstItem="MSy-xz-Ur9" firstAttribute="centerX" secondItem="IU2-zy-1DF" secondAttribute="centerX" id="UdP-iq-rWu"/>
+                            <constraint firstItem="MSy-xz-Ur9" firstAttribute="top" secondItem="bX0-7V-V0f" secondAttribute="top" constant="160" id="kCg-2w-FyP"/>
+                            <constraint firstItem="1X5-Cm-VkL" firstAttribute="firstBaseline" secondItem="MSy-xz-Ur9" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="rGT-M9-Vjp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bX0-7V-V0f"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ball" image="smallBall" largeContentSizeImage="bigBall" badgeValue="qrt" id="h7f-L6-x6l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JnS-8y-B3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-550" y="762"/>
+        </scene>
         <!--Cell-->
         <scene sceneID="ZsM-xt-8pX">
             <objects>
@@ -68,7 +98,7 @@
                             <outlet property="delegate" destination="Byh-Mx-47A" id="Y5E-Ts-zuF"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Cell" id="fZo-Xb-50z"/>
+                    <tabBarItem key="tabBarItem" title="Cell" image="pdf" id="fZo-Xb-50z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idv-5g-AmW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,10 +150,16 @@
                         <segue destination="JfX-Ub-gAC" kind="relationship" relationship="viewControllers" id="Wo6-Hb-5fe"/>
                         <segue destination="2If-Up-6kJ" kind="relationship" relationship="viewControllers" id="SbS-pG-pDV"/>
                         <segue destination="Byh-Mx-47A" kind="relationship" relationship="viewControllers" id="0z3-yg-PZ4"/>
+                        <segue destination="rPd-L0-oLi" kind="relationship" relationship="viewControllers" id="WQU-7m-YKm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ra-VJ-1P8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="bigBall" width="75" height="75"/>
+        <image name="pdf" width="28" height="25"/>
+        <image name="smallBall" width="40" height="40"/>
+    </resources>
 </document>
