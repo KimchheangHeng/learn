@@ -22,18 +22,18 @@ class LayoutViewController: UIViewController {
         
         firstLabel.translatesAutoresizingMaskIntoConstraints = false
         secondLabel.translatesAutoresizingMaskIntoConstraints = false
-        firstLabel.setContentHuggingPriority(UILayoutPriority.init(751), for: .vertical)
+        firstLabel.setContentHuggingPriority(UILayoutPriority.init(751), for: .horizontal)
         
-        twolineConstraint = [firstLabel.firstBaselineAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: UIFontMetrics.default.scaledValue(for: 100)),
+        twolineConstraint = [firstLabel.firstBaselineAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
                              firstLabel.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor, constant: 0),
                              secondLabel.centerXAnchor.constraint(equalTo: firstLabel.centerXAnchor, constant: 0),
                              secondLabel.firstBaselineAnchor.constraintEqualToSystemSpacingBelow(firstLabel.lastBaselineAnchor, multiplier: 1)]
 
         onelineConstraint = [
-            firstLabel.firstBaselineAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: UIFontMetrics.default.scaledValue(for: 200) ),
-            firstLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            firstLabel.firstBaselineAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200 ),
+            firstLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
             firstLabel.trailingAnchor.constraint(equalTo: secondLabel.leadingAnchor, constant: 10),
-            secondLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            secondLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
             secondLabel.firstBaselineAnchor.constraint(equalTo: firstLabel.firstBaselineAnchor, constant: 0)]
 
         self.layoutForSize(UIApplication.shared.preferredContentSizeCategory)
@@ -57,18 +57,15 @@ class LayoutViewController: UIViewController {
 
     func layoutForSize(_ size: UIContentSizeCategory) -> Void {
         
-        if isCurrentAccessibility != size.isAccessibilityCategory {
+//        if isCurrentAccessibility != size.isAccessibilityCategory {
             isCurrentAccessibility = size.isAccessibilityCategory
-            firstLabel.removeConstraints(firstLabel.constraints)
-            secondLabel.removeConstraints(secondLabel.constraints)
             if isCurrentAccessibility {
                 layoutForTwoLine()
             } else {
                 layoutForOneline()
             }
-            view.setNeedsLayout()
         }
-    }
+//    }
 
     func layoutForOneline() -> Void {
         firstLabel.textAlignment = .left
@@ -79,6 +76,8 @@ class LayoutViewController: UIViewController {
     }
 
     func layoutForTwoLine() -> Void {
+        firstLabel.translatesAutoresizingMaskIntoConstraints = false
+        secondLabel.translatesAutoresizingMaskIntoConstraints = false
         firstLabel.textAlignment = .center
         secondLabel.textAlignment = .center
         NSLayoutConstraint.deactivate(onelineConstraint)
