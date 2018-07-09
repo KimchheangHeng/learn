@@ -24,13 +24,13 @@ class LayoutViewController: UIViewController {
         secondLabel.translatesAutoresizingMaskIntoConstraints = false
         firstLabel.setContentHuggingPriority(UILayoutPriority.init(751), for: .horizontal)
         
-        twolineConstraint = [firstLabel.firstBaselineAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
+        twolineConstraint = [ firstLabel.firstBaselineAnchor.constraintEqualToSystemSpacingBelow(view.layoutMarginsGuide.topAnchor, multiplier: 3),
                              firstLabel.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor, constant: 0),
                              secondLabel.centerXAnchor.constraint(equalTo: firstLabel.centerXAnchor, constant: 0),
                              secondLabel.firstBaselineAnchor.constraintEqualToSystemSpacingBelow(firstLabel.lastBaselineAnchor, multiplier: 1)]
 
         onelineConstraint = [
-            firstLabel.firstBaselineAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200 ),
+            firstLabel.firstBaselineAnchor.constraintEqualToSystemSpacingBelow(view.layoutMarginsGuide.topAnchor, multiplier: 3),
             firstLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
             firstLabel.trailingAnchor.constraint(equalTo: secondLabel.leadingAnchor, constant: 10),
             secondLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
