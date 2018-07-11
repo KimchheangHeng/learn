@@ -53,6 +53,7 @@
 		260A7B4A20F38A1100566E2D /* TextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewVC.swift; sourceTree = "<group>"; };
 		260A7B4C20F38A1D00566E2D /* LabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelVC.swift; sourceTree = "<group>"; };
 		260A7B4E20F38B0700566E2D /* ss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ss.swift; sourceTree = "<group>"; };
+		267AC68E20F589A400EA3618 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		260A7B0E20F3899800566E2D = {
 			isa = PBXGroup;
 			children = (
+				267AC68E20F589A400EA3618 /* README.md */,
 				260A7B1920F3899900566E2D /* IndentString */,
 				260A7B2E20F3899A00566E2D /* IndentStringTests */,
 				260A7B3920F3899B00566E2D /* IndentStringUITests */,
