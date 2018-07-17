@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26699CFB20F9D273006CCE17 /* RecognizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26699CFA20F9D273006CCE17 /* RecognizeViewController.swift */; };
+		26699CFD20F9D7BA006CCE17 /* TokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26699CFC20F9D7BA006CCE17 /* TokenViewController.swift */; };
 		26C3D8A720F8E009006481DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3D8A620F8E009006481DC /* AppDelegate.swift */; };
 		26C3D8A920F8E009006481DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3D8A820F8E009006481DC /* ViewController.swift */; };
 		26C3D8AC20F8E009006481DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C3D8AA20F8E009006481DC /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26699CFA20F9D273006CCE17 /* RecognizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeViewController.swift; sourceTree = "<group>"; };
+		26699CFC20F9D7BA006CCE17 /* TokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenViewController.swift; sourceTree = "<group>"; };
 		26C3D8A320F8E009006481DC /* NLPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C3D8A620F8E009006481DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26C3D8A820F8E009006481DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				26C3D8A620F8E009006481DC /* AppDelegate.swift */,
 				26C3D8A820F8E009006481DC /* ViewController.swift */,
 				26C3D8AA20F8E009006481DC /* Main.storyboard */,
+				26699CFA20F9D273006CCE17 /* RecognizeViewController.swift */,
+				26699CFC20F9D7BA006CCE17 /* TokenViewController.swift */,
 				26C3D8AD20F8E00A006481DC /* Assets.xcassets */,
 				26C3D8AF20F8E00A006481DC /* LaunchScreen.storyboard */,
 				26C3D8B220F8E00A006481DC /* Info.plist */,
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26699CFD20F9D7BA006CCE17 /* TokenViewController.swift in Sources */,
+				26699CFB20F9D273006CCE17 /* RecognizeViewController.swift in Sources */,
 				26C3D8A920F8E009006481DC /* ViewController.swift in Sources */,
 				26C3D8A720F8E009006481DC /* AppDelegate.swift in Sources */,
 			);
@@ -431,12 +439,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = NLPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.NLPDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TangPoetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,12 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = NLPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.NLPDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TangPoetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
