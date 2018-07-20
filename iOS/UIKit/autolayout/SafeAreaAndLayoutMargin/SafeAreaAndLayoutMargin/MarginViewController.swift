@@ -63,6 +63,9 @@ class MarginViewController: UIViewController {
         innerView.translatesAutoresizingMaskIntoConstraints = false
         preservesSuperviewLayoutMarginsView.layoutMargins = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
         //一定要用layoutmarginguide
+        //        If the content view has constraints to the edges of the container the assumption is that you do not care about margins and the preservesSuperviewLayoutMargins property has no effect.
+        
+        //https://useyourloaf.com/blog/preserves-superview-layout-margins/
         let innerConstraint = [innerView.topAnchor.constraint(equalTo: preservesSuperviewLayoutMarginsView.layoutMarginsGuide.topAnchor),
                                innerView.leadingAnchor.constraint(equalTo: preservesSuperviewLayoutMarginsView.layoutMarginsGuide.leadingAnchor, constant: 0),
                                innerView.bottomAnchor.constraint(equalTo: preservesSuperviewLayoutMarginsView.layoutMarginsGuide.bottomAnchor, constant: 0),
