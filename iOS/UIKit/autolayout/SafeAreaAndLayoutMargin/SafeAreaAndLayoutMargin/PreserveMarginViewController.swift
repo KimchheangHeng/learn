@@ -13,19 +13,30 @@ class PreserveMarginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewRespectsSystemMinimumLayoutMargins = false
-        view.insetsLayoutMarginsFromSafeArea = false
-        view.layoutMargins = UIEdgeInsets(top: 140, left: 140, bottom: 140, right: 140)
+//        viewRespectsSystemMinimumLayoutMargins = true
+//        view.insetsLayoutMarginsFromSafeArea = true
+//        view.layoutMargins = UIEdgeInsets(top: 140, left: 140, bottom: 140, right: 140)
+        
+        let purpleView = UIView()
+        purpleView.backgroundColor = .purple
+        purpleView.layoutMargins = UIEdgeInsets(top: 140, left: 140, bottom: 140, right: 140)
+        view.addSubview(purpleView)
+        purpleView.translatesAutoresizingMaskIntoConstraints = false
+        view.topAnchor.constraint(equalTo: purpleView.topAnchor).isActive = true
+        view.leadingAnchor.constraint(equalTo: purpleView.leadingAnchor).isActive = true
+        view.trailingAnchor.constraint(equalTo: purpleView.trailingAnchor).isActive = true
+        view.bottomAnchor.constraint(equalTo: purpleView.bottomAnchor).isActive = true
+
         
         let orangeView = UIView()
-//        orangeView.preservesSuperviewLayoutMargins = true
+        orangeView.preservesSuperviewLayoutMargins = true
         orangeView.backgroundColor = .orange
-        view.addSubview(orangeView)
+        purpleView.addSubview(orangeView)
         orangeView.translatesAutoresizingMaskIntoConstraints = false
-        view.topAnchor.constraint(equalTo: orangeView.topAnchor).isActive = true
-        view.leadingAnchor.constraint(equalTo: orangeView.leadingAnchor).isActive = true
-        view.trailingAnchor.constraint(equalTo: orangeView.trailingAnchor).isActive = true
-        view.bottomAnchor.constraint(equalTo: orangeView.bottomAnchor).isActive = true
+        purpleView.topAnchor.constraint(equalTo: orangeView.topAnchor, constant: -50).isActive = true
+        purpleView.leadingAnchor.constraint(equalTo: orangeView.leadingAnchor).isActive = true
+        purpleView.trailingAnchor.constraint(equalTo: orangeView.trailingAnchor).isActive = true
+        purpleView.bottomAnchor.constraint(equalTo: orangeView.bottomAnchor).isActive = true
         
         let yellowView = UIView()
         yellowView.backgroundColor = .yellow
