@@ -32,8 +32,9 @@ class ViewController: UIViewController {
             bgView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)]
         NSLayoutConstraint.activate(constraints)
         bgView.backgroundColor = UIColor.blue
+
         
-        
+
         topView = UIView.init()
         view.addSubview(topView)
         topView.frame = CGRect.init(x: 20, y: 0, width: 200, height: 400)

@@ -15,7 +15,7 @@ class SystemMinViewController: UIViewController {
     let log = OSLog.init(subsystem: "com.tiger.test", category: "systemMin")
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewRespectsSystemMinimumLayoutMargins = true
+        self.viewRespectsSystemMinimumLayoutMargins = false
 
         view.directionalLayoutMargins = NSDirectionalEdgeInsets.init(top: 0, leading: 0, bottom: 0, trailing: 0)
 //        view.insetsLayoutMarginsFromSafeArea = false

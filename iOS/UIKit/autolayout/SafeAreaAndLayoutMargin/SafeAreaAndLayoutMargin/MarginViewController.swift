@@ -30,10 +30,10 @@ class MarginViewController: UIViewController {
         view.addSubview(bgView)
         bgView.translatesAutoresizingMaskIntoConstraints = false
         let constraints = [
-            bgView.topAnchor.constraint(equalTo: view.topAnchor),
-            bgView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            bgView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            bgView.trailingAnchor.constraint(equalTo: view.trailingAnchor)]
+            bgView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
+            bgView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
+            bgView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            bgView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor)]
         NSLayoutConstraint.activate(constraints)
         
         preservesSuperviewLayoutMarginsView = UIView.init()
@@ -49,7 +49,7 @@ class MarginViewController: UIViewController {
         //                                  preservesSuperviewLayoutMarginsView.leadingAnchor.constraint(equalTo: bgView.leadingAnchor),
         //                                  preservesSuperviewLayoutMarginsView.trailingAnchor.constraint(equalTo: bgView.trailingAnchor)]
         let preserveConstranit = [preservesSuperviewLayoutMarginsView.topAnchor.constraint(equalTo: bgView.topAnchor, constant: 10),
-                                  preservesSuperviewLayoutMarginsView.bottomAnchor.constraint(equalTo: bgView.bottomAnchor, constant: 0),
+                                  preservesSuperviewLayoutMarginsView.bottomAnchor.constraint(equalTo: bgView.bottomAnchor, constant: -10),
                                   preservesSuperviewLayoutMarginsView.centerXAnchor.constraint(equalTo: bgView.centerXAnchor),
                                   preservesSuperviewLayoutMarginsView.widthAnchor.constraint(equalTo: bgView.widthAnchor)]
         
@@ -107,7 +107,7 @@ class MarginViewController: UIViewController {
             NSLayoutConstraint.activate(labelConstranits)
             // 如果这个是false，那么topview中的label，可以出现在safeArea区域之外 topView.layoutMargins维持为0
             // 如果这个是true，那么topview的lable一定在safeArea之内。topView.layoutMargins也会变化
-            viewa!.insetsLayoutMarginsFromSafeArea = false
+            viewa!.insetsLayoutMarginsFromSafeArea = true
 
         }
 //
