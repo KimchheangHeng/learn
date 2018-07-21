@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260E9BD0210223CA006F8921 /* SystemMinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E9BCF210223CA006F8921 /* SystemMinViewController.swift */; };
 		261FCFD921016AB4007C5CD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FCFD821016AB4007C5CD4 /* AppDelegate.swift */; };
 		261FCFDB21016AB4007C5CD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FCFDA21016AB4007C5CD4 /* ViewController.swift */; };
 		261FCFDE21016AB4007C5CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261FCFDC21016AB4007C5CD4 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260E9BCF210223CA006F8921 /* SystemMinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMinViewController.swift; sourceTree = "<group>"; };
 		261FCFD521016AB4007C5CD4 /* SafeAreaAndLayoutMargin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeAreaAndLayoutMargin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261FCFD821016AB4007C5CD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261FCFDA21016AB4007C5CD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				261FCFDA21016AB4007C5CD4 /* ViewController.swift */,
 				26FA0A022101C13C00CF48AD /* MarginViewController.swift */,
 				268FC1D32101E43400018EE6 /* PreserveMarginViewController.swift */,
+				260E9BCF210223CA006F8921 /* SystemMinViewController.swift */,
 				261FCFDC21016AB4007C5CD4 /* Main.storyboard */,
 				261FCFDF21016AB5007C5CD4 /* Assets.xcassets */,
 				261FCFE121016AB5007C5CD4 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260E9BD0210223CA006F8921 /* SystemMinViewController.swift in Sources */,
 				261FCFDB21016AB4007C5CD4 /* ViewController.swift in Sources */,
 				26FA0A032101C13C00CF48AD /* MarginViewController.swift in Sources */,
 				268FC1D42101E43400018EE6 /* PreserveMarginViewController.swift in Sources */,
@@ -439,14 +443,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L353C5X2WQ;
+				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = SafeAreaAndLayoutMargin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TangPoetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,14 +462,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L353C5X2WQ;
+				DEVELOPMENT_TEAM = R6P284TSWY;
 				INFOPLIST_FILE = SafeAreaAndLayoutMargin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.TangPoetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
