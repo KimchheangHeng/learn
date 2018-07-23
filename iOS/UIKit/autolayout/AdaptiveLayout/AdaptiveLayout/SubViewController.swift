@@ -74,13 +74,22 @@ class SubViewController: UIViewController {
     
     后来姑娘的父母打听了五堂哥，然而五堂哥在北京有女朋友。又打听了四堂哥，可是四堂哥家里看不上她。最后打听了我弟，谢谢，我弟还小，还没到领证年龄呢
 """
+    let textSubview = UIView.init()
     var reallyHide = false
     override func viewDidLoad() {
         super.viewDidLoad()
+        textSubview.backgroundColor = UIColor.blue
+        textSubview.frame = CGRect.init(x: 30, y: 0, width: 40, height: 100)
+        textView.addSubview(textSubview)
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+            print(self.textSubview.safeAreaInsets)
+        }
 
         // Do any additional setup after loading the view.
         view.addSubview(textView)
         textView.text = text
+//        textView.text = "short string short stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort stringshort string"
         let constraints = [
         textView.topAnchor.constraint(equalTo: view.topAnchor),
         textView.rightAnchor.constraint(equalTo: view.rightAnchor),
@@ -91,6 +100,15 @@ class SubViewController: UIViewController {
         if reallyHide {
             self.navigationController?.setNavigationBarHidden(true, animated: true)
         }
+        
+        // always 上下左右的 safeArea 都会被当作 contentinset, 表现正常
+        // never 上下左右的 safeArea 都不会被当作 contentinset，上下会被 bar 吞掉。左右会处于safeArea 之外
+        // scrollableAxes 上下可以滚动，上下的 safeArea 会被当作 contentInset，表现正常。左右会处于 safeArea 之外
+         //automatic 和 scrollableAxes 表现一致。在不可滚动时，automatic会上下缩进，scrollableAxes不会，因为不scrollable了
+        
+        textView.contentInsetAdjustmentBehavior = .automatic
+        textView.backgroundColor = .yellow
+        textView.delegate = self
         
     }
     
@@ -111,4 +129,13 @@ class SubViewController: UIViewController {
     }
     */
 
+}
+
+extension SubViewController: UITextViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // textSubview 不会收到 textView 传递来的 safeArea
+        print(textSubview.safeAreaInsets)
+        print("textview: \(textView.safeAreaInsets)")
+//        print(scrollView)
+    }
 }

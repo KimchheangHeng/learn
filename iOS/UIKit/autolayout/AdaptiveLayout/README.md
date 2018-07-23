@@ -17,6 +17,10 @@
 > Content Hugging Priority：直译成中文就是 “内容拥抱优先级”，从字面意思上来看就是两个视图，谁的 “内容拥抱优先级” 高，谁就优先环绕其内容。
 > Content Compression Resistance Priority：该优先级直译成中文就是 “内容压缩阻力优先级”。也就是视图的 “内容压缩阻力优先级” 越大，那么该视图中的内容越难被压缩。而该优先级小的视图，则内容优先被压缩。
 
+## scrollview  
+> when a scroll view absorbs safe area insets into its adjusted content inset, it will no longer propagate those same insets down to its subviews on that same edge. This is really important. Scroll views use scrolling to move content around and move it out into the safe area. And if a scroll view were to also propagate safe area insets that it was using to extend its scrollable area, it would almost be like double accounting for those same insets in two different places.
+
+> And so as a result, the subviews on the scrollable axis are kind of completely unaware that there are safe area insets on the edges that the scroll view is absorbing them into its adjusted content inset. 
 
 ## 参考 
 - [iOS 开发之 AutoLayout 中的 Content Hugging Priority 和 Content Compression Resistance Priority 解析](https://www.cnblogs.com/ludashi/p/7373051.html)
