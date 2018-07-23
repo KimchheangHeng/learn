@@ -18,8 +18,9 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellid)
-        tableView.insetsContentViewsToSafeArea = false
+        tableView.insetsContentViewsToSafeArea = true
         tableView.cellLayoutMarginsFollowReadableWidth = true
+        tableView.contentInset = UIEdgeInsets.init(top: 20, left: 0, bottom: 0, right: 0)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,7 +33,7 @@ class ViewController: UITableViewController {
         cell.textLabel?.text = text
         cell.contentView.backgroundColor = UIColor.blue
         cell.backgroundColor = UIColor.red
-//        cell.selectedBackgroundView?.backgroundColor = UIColor.yellow
+        cell.selectedBackgroundView?.backgroundColor = UIColor.yellow
         cell.selectionStyle = .none
         return cell
     }
@@ -43,6 +44,11 @@ class ViewController: UITableViewController {
             vc.reallyHide = true
         }
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        assert(scrollView == tableView)
+        print("contentInsets is \(scrollView.contentInset), adjustedInset is \(scrollView.adjustedContentInset)")
     }
 }
 

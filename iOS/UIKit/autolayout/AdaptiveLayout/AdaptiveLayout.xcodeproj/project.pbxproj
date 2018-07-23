@@ -53,6 +53,7 @@
 		2653076E2104163800BAAA64 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		267DC8C92104A1A2004E2D6C /* ButtomMarginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomMarginViewController.swift; sourceTree = "<group>"; };
 		267DC8CB2104AD52004E2D6C /* HugResistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugResistViewController.swift; sourceTree = "<group>"; };
+		268DB2B521055C8600D8E7AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		265307342104146300BAAA64 = {
 			isa = PBXGroup;
 			children = (
+				268DB2B521055C8600D8E7AD /* README.md */,
 				2653073F2104146300BAAA64 /* AdaptiveLayout */,
 				265307542104146500BAAA64 /* AdaptiveLayoutTests */,
 				2653075F2104146500BAAA64 /* AdaptiveLayoutUITests */,
