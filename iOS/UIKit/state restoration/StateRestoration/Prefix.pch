@@ -1,0 +1,12 @@
+#ifdef __OBJC__
+    @import Foundation;
+    @import UIKit;
+#endif
+
+// In state restoration UIKit automatically finds and creates view controllers for you if they were created from your storyboard.
+// But it you manually create view controllers in code, you have to re-create those view controllers by adopting "UIViewControllerRestoration" protocol).
+// Use this build flag for manually created view controllers -
+//
+//#define MANUALLY_CREATE_VC_FOR_RESTORATION
+
+
