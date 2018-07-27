@@ -29,6 +29,10 @@ class TestXcodeServerTests: XCTestCase {
         XCTAssertEqual(b, 2)
     }
     
+    func testFail()  {
+        XCTAssertEqual(1, 0)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
