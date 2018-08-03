@@ -14,6 +14,7 @@
 		261BF42F2111B8970073C9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261BF42D2111B8970073C9EA /* LaunchScreen.storyboard */; };
 		261BF43A2111B8970073C9EA /* AppStoreAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BF4392111B8970073C9EA /* AppStoreAnimationTests.swift */; };
 		261BF4452111B8970073C9EA /* AppStoreAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BF4442111B8970073C9EA /* AppStoreAnimationUITests.swift */; };
+		26743B482113E9830033BE27 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26743B472113E9830033BE27 /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		261BF4442111B8970073C9EA /* AppStoreAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreAnimationUITests.swift; sourceTree = "<group>"; };
 		261BF4462111B8970073C9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261BF4522111B8A30073C9EA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		26743B472113E9830033BE27 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				261BF4242111B8960073C9EA /* AppDelegate.swift */,
 				261BF4262111B8960073C9EA /* ViewController.swift */,
+				26743B472113E9830033BE27 /* SubViewController.swift */,
 				261BF4282111B8960073C9EA /* Main.storyboard */,
 				261BF42B2111B8970073C9EA /* Assets.xcassets */,
 				261BF42D2111B8970073C9EA /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26743B482113E9830033BE27 /* SubViewController.swift in Sources */,
 				261BF4272111B8960073C9EA /* ViewController.swift in Sources */,
 				261BF4252111B8960073C9EA /* AppDelegate.swift in Sources */,
 			);

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jfJ-24-Xbf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jfJ-24-Xbf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,20 +36,20 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="J7p-am-C6c" kind="relationship" relationship="viewControllers" id="BIB-Zf-kDu"/>
                         <segue destination="CJV-pk-xWr" kind="relationship" relationship="viewControllers" id="nGY-Sy-TIF"/>
+                        <segue destination="J7p-am-C6c" kind="relationship" relationship="viewControllers" id="eu6-dY-QX0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXE-t9-LZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1841" y="-976"/>
         </scene>
-        <!--UpdateApp-->
+        <!--View Controller-->
         <scene sceneID="Cfc-p0-aqa">
             <objects>
                 <tableViewController id="u0d-ox-lFb" customClass="ViewController" customModule="AppStoreAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="x59-pH-lky">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -67,18 +67,18 @@
                             <outlet property="delegate" destination="u0d-ox-lFb" id="fZs-R2-Ybb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="UpdateApp" id="g99-3W-O3K"/>
+                    <navigationItem key="navigationItem" id="g99-3W-O3K"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBe-jE-zG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962" y="-1087"/>
+            <point key="canvasLocation" x="960.79999999999995" y="-1087.1064467766118"/>
         </scene>
         <!--Update-->
         <scene sceneID="gtE-Xg-qvF">
             <objects>
                 <navigationController id="CJV-pk-xWr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Update" id="XfN-xt-Tru"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MvB-VH-eRl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="MvB-VH-eRl">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
