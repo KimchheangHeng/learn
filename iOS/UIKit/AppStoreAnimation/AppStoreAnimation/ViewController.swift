@@ -43,9 +43,9 @@ class ViewController: UITableViewController {
         self.refreshControl = refreshControsl
         self.refreshControl?.addTarget(self, action: #selector(type(of: self).refreshd), for: .valueChanged)
 //        self.navigationController?.navigationBar.clipsToBounds = true
-        self.navigationController?.navigationBar.shadowImage = UIImage.init()
+//        self.navigationController?.navigationBar.shadowImage = UIImage.init()
         self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Update", style: .plain, target: nil, action: nil)
-        
+        tableView.backgroundColor = .red
         
     }
 
@@ -70,6 +70,7 @@ extension ViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellid, for: indexPath)
         cell.textLabel?.text = "fdfddfasdkflas;dkfla'"
+        cell.backgroundColor = .red
         return cell
     }
     

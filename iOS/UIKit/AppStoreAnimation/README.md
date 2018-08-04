@@ -1,4 +1,4 @@
-#  模仿AppStore 的顶部动画
+#  AppStore-like animation
 
-## 参考 
-- [去掉 navigationBar 下面的一条横线](https://www.jianshu.com/p/d32aeb442537)
+![a](media/15333530977241/al.gif)
+
