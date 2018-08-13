@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="none_scroll_textView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" text="f" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-Gs-NLY">
+                                <rect key="frame" x="86" y="323" width="203" height="21"/>
+                                <color key="backgroundColor" red="0.86308820210000003" green="1" blue="0.2517821187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="7Cz-Kw-Dig"/>
+                                    <constraint firstAttribute="height" constant="21" id="c4O-EJ-OOz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fw7-dn-JoE">
+                                <rect key="frame" x="86" y="266.5" width="203" height="21"/>
+                                <color key="backgroundColor" red="0.69148510632503613" green="1" blue="0.90520906206654694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hDf-Gs-NLY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IHf-yS-zbK"/>
+                            <constraint firstItem="fw7-dn-JoE" firstAttribute="height" secondItem="hDf-Gs-NLY" secondAttribute="height" id="T7t-kT-j0j"/>
+                            <constraint firstItem="hDf-Gs-NLY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="cFU-65-6St"/>
+                            <constraint firstItem="fw7-dn-JoE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fLU-LW-9Db"/>
+                            <constraint firstItem="hDf-Gs-NLY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tFc-Cm-KJs"/>
+                            <constraint firstItem="hDf-Gs-NLY" firstAttribute="top" secondItem="fw7-dn-JoE" secondAttribute="bottom" constant="35.5" id="u65-lZ-k29"/>
+                            <constraint firstItem="fw7-dn-JoE" firstAttribute="width" secondItem="hDf-Gs-NLY" secondAttribute="width" id="yf6-EN-Y6r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ts" destination="hDf-Gs-NLY" id="pyO-7e-AgB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
