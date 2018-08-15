@@ -13,10 +13,16 @@ class ViewController: UITableViewController {
     let cellID = "cellID"
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "right", style: .plain, target: nil, action: nil)
+        self.navigationItem.title = "Title"
+        
         // Do any additional setup after loading the view, typically from a nib.
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+//        self.navigationController?.navigationBar.isTranslucent = false
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(), for: .default)
         self.navigationController?.navigationBar.barTintColor = .yellow
+        self.navigationController?.navigationBar.tintColor = .brown
+//        self.navigationController?.navigationBar.barStyle = .black
     }
 
     override func didReceiveMemoryWarning() {
