@@ -14,12 +14,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let textView1 = UITextView.init()
-        textView1.bounds = CGRect.init(x: 0, y: 0, width: 375, height: 300)
-        textView1.keyboardDismissMode = .onDrag
-        textView1.backgroundColor = UIColor.yellow
-        textView1.font = UIFont.preferredFont(forTextStyle: .largeTitle)
-        textView.inputAccessoryView = textView1
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        let layouts = [textView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                       textView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+                       textView.heightAnchor.constraint(equalToConstant: textView.font!.lineHeight),
+                       textView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor)]
+        NSLayoutConstraint.activate(layouts)
+        
+        // 不展示右部滚动条
+        textView.showsVerticalScrollIndicator = false
+        // 可以调整 contentinset
+        textView.textContainerInset = UIEdgeInsets.init(top: 5, left: 8, bottom: 9, right: 8)
+        textView.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,3 +37,11 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UITextViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        assert(scrollView == textView)
+        print("\(#function)")
+        // 始终定位在底部
+        textView.contentOffset = CGPoint.init(x: 0, y: textView.contentSize.height - textView.bounds.size.height - textView.textContainerInset.bottom)
+    }
+}
