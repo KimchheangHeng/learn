@@ -1,8 +1,0 @@
-
-<schema name="system-load" topology="XRTD50_CC22_R_TypeID">
-    <column engineeringType="XRStartTimeTypeID" engineeringName="Time" mnemonic="start" topologyField="XRTraceRelativeTimestampFieldID"></column>
-    <column engineeringType="XRDurationTypeID" engineeringName="Duration" mnemonic="duration" topologyField="XRDurationFieldID"></column>
-    <column engineeringType="XRSystemLoadTypeID" engineeringName="Load" mnemonic="load"></column>
-    <column engineeringType="XRSystemLoadTypeID" engineeringName="User Interactive Load" mnemonic="ui-load"></column>
-    <column engineeringType="XRLoadCommitmentTypeID" engineeringName="UI Load Commitment" mnemonic="ui-load-commitment"></column>
-</schema>
