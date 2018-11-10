@@ -19,23 +19,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.yellow
+        view.accessibilityIdentifier = "rootView abi"
+        view.accessibilityLabel = "rootViewVV"
         button = UIButton.init()
+        button.accessibilityIdentifier = "mybtn abi"
+        button.accessibilityLabel = "mybtnVV"
         button.setTitle("click to send", for: .normal)
         view.addSubview(button)
         button.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.top.equalToSuperview().offset(50)
+            make.centerX.equalToSuperview().labeled("mybutton centerX")
+            make.top.equalToSuperview().offset(50).labeled("mybutton top")
         }
         button.addTarget(self, action: #selector(type(of: self).sendMsg), for: .touchUpInside)
         
         webView = WKWebView.init()
+        webView.accessibilityIdentifier = "mywebview abi"
+        webView.accessibilityLabel = "mywebviewVV"
         let usecc = self.webView.configuration.userContentController
         usecc.add(self, name: "testecho")
         
         view.addSubview(webView)
         webView.snp.makeConstraints({ (make) in
-            make.leading.trailing.bottom.equalToSuperview()
-            make.top.equalToSuperview().offset(200)
+            make.leading.trailing.bottom.equalToSuperview().labeled("mywebview Edges")
+            make.top.equalToSuperview().offset(200).labeled("mywebview Top")
         })
         
         //加载本地文件
