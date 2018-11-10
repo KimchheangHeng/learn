@@ -38,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B725A232E19377A86730E25 /* Pods-TestWKWebviewJSPerformanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformanceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformanceUITests/Pods-TestWKWebviewJSPerformanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		10185D6D7529CFCDEECD2AC3 /* Pods-TestWKWebviewJSPerformanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformanceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformanceTests/Pods-TestWKWebviewJSPerformanceTests.release.xcconfig"; sourceTree = "<group>"; };
 		114CEC6F93A8DE16F3524791 /* Pods_TestWKWebviewJSPerformanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestWKWebviewJSPerformanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B9BDC26330CCEF3D082D8F /* Pods-TestWKWebviewJSPerformanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformanceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformanceUITests/Pods-TestWKWebviewJSPerformanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		26BB00312195ABB100434F17 /* TestWKWebviewJSPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWKWebviewJSPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,11 +57,15 @@
 		26BB00562195ABB300434F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26BB00622195AC0400434F17 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		385FFEBC4A7D997712A3A36C /* Pods-TestWKWebviewJSPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformance/Pods-TestWKWebviewJSPerformance.debug.xcconfig"; sourceTree = "<group>"; };
+		59116CDEE804589A48058923 /* Pods-TestWKWebviewJSPerformanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformanceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformanceTests/Pods-TestWKWebviewJSPerformanceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6624074C6FEC2FF19A2A05D0 /* Pods-TestWKWebviewJSPerformance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformance.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformance/Pods-TestWKWebviewJSPerformance.release.xcconfig"; sourceTree = "<group>"; };
 		6FF6857C2A1221ABA8599D78 /* Pods-TestWKWebviewJSPerformanceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformanceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformanceUITests/Pods-TestWKWebviewJSPerformanceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7793303BCD97A2EF6096E2A1 /* Pods-TestWKWebviewJSPerformance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformance.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformance/Pods-TestWKWebviewJSPerformance.release.xcconfig"; sourceTree = "<group>"; };
 		9C30DFC943754634430A68E7 /* Pods_TestWKWebviewJSPerformanceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestWKWebviewJSPerformanceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF31415D177D8BD45697B261 /* Pods_TestWKWebviewJSPerformance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestWKWebviewJSPerformance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E68C7D4428CBF3FF7DD645 /* Pods-TestWKWebviewJSPerformanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformanceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformanceTests/Pods-TestWKWebviewJSPerformanceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCFFBB81C6C7CB14A97C884F /* Pods-TestWKWebviewJSPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformance/Pods-TestWKWebviewJSPerformance.debug.xcconfig"; sourceTree = "<group>"; };
+		D452F0342FD9F29C31E3417F /* Pods-TestWKWebviewJSPerformanceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformanceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformanceUITests/Pods-TestWKWebviewJSPerformanceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F45815A5D39A66FC00B36242 /* Pods-TestWKWebviewJSPerformanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWKWebviewJSPerformanceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWKWebviewJSPerformanceTests/Pods-TestWKWebviewJSPerformanceTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +105,7 @@
 				26BB00532195ABB300434F17 /* TestWKWebviewJSPerformanceUITests */,
 				26BB00322195ABB100434F17 /* Products */,
 				AD3C596EC6766FD66F6A9521 /* Frameworks */,
+				91629314CFBFC58053464A16 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,19 @@
 				26BB00562195ABB300434F17 /* Info.plist */,
 			);
 			path = TestWKWebviewJSPerformanceUITests;
+			sourceTree = "<group>";
+		};
+		91629314CFBFC58053464A16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCFFBB81C6C7CB14A97C884F /* Pods-TestWKWebviewJSPerformance.debug.xcconfig */,
+				6624074C6FEC2FF19A2A05D0 /* Pods-TestWKWebviewJSPerformance.release.xcconfig */,
+				59116CDEE804589A48058923 /* Pods-TestWKWebviewJSPerformanceTests.debug.xcconfig */,
+				10185D6D7529CFCDEECD2AC3 /* Pods-TestWKWebviewJSPerformanceTests.release.xcconfig */,
+				0B725A232E19377A86730E25 /* Pods-TestWKWebviewJSPerformanceUITests.debug.xcconfig */,
+				D452F0342FD9F29C31E3417F /* Pods-TestWKWebviewJSPerformanceUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A726CE4B46A9AC52AA1A3A3D /* Pods */ = {
@@ -333,12 +353,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestWKWebviewJSPerformance/Pods-TestWKWebviewJSPerformance-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

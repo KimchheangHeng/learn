@@ -1,16 +1,20 @@
 PODS:
   - SnapKit (4.2.0)
+  - SwiftyBeaver (1.6.1)
 
 DEPENDENCIES:
   - SnapKit
+  - SwiftyBeaver
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SnapKit
+    - SwiftyBeaver
 
 SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyBeaver: ccfcdf85a04d429f1633f668650b0ce8020bda3a
 
-PODFILE CHECKSUM: 67d68a78c31566ecf3b67c790a5c3209a157e6e4
+PODFILE CHECKSUM: 496332012f91e4dadeff8f80fe6a342a65996f47
 
 COCOAPODS: 1.5.3

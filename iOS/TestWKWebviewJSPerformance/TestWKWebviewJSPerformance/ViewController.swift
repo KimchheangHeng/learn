@@ -9,19 +9,28 @@
 import UIKit
 import WebKit
 import SnapKit
+import SwiftyBeaver
 
 class ViewController: UIViewController {
     
     var webView: WKWebView!
     var button: UIButton!
-    var sendCount = 1
+    var currentTryCount = 1 //当前试图发送的次数
+    let maxTryCount = 20
+    let log = SwiftyBeaver.self
+    var records = [JSPerformanceRecord]()
+    var currentRecord: JSPerformanceRecord!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.yellow
+        let console = ConsoleDestination()  // log to Xcode Console
+        log.addDestination(console)
+        
+        self.view.backgroundColor = UIColor.white
         view.accessibilityIdentifier = "rootView abi"
         view.accessibilityLabel = "rootViewVV"
         button = UIButton.init()
+        button.backgroundColor = .gray
         button.accessibilityIdentifier = "mybtn abi"
         button.accessibilityLabel = "mybtnVV"
         button.setTitle("click to send", for: .normal)
@@ -30,7 +39,7 @@ class ViewController: UIViewController {
             make.centerX.equalToSuperview().labeled("mybutton centerX")
             make.top.equalToSuperview().offset(50).labeled("mybutton top")
         }
-        button.addTarget(self, action: #selector(type(of: self).sendMsg), for: .touchUpInside)
+        button.addTarget(self, action: #selector(type(of: self).testSendMsg), for: .touchUpInside)
         
         webView = WKWebView.init()
         webView.accessibilityIdentifier = "mywebview abi"
@@ -49,50 +58,61 @@ class ViewController: UIViewController {
         let request = URLRequest.init(url: fileURL)
         webView.load(request)
         
-        // Do any additional setup after loading the view.
     }
     
-    @objc func sendMsg() {
-        sendMsgForCount(0)
+    @objc func testSendMsg() {
+        currentTryCount = 1
+        self.records.removeAll()
+        sendMsgToJS()
     }
-    func sendMsgForCount(_ count: Int) {
-        let jsStr = "echo(\"\(getMsgForSendCount(sendCount))\")"
-        self.mylog("------------------------------------")
-        self.mylog("\(self.sendCount) before evaluate \(jsStr.count) bytes JS")
-//        self.mylog("\(self.sendCount) before evaluate \(jsStr.count) bytes JS: \(jsStr)")
-
+    
+    func sendMsgToJS() {
+        let jsStr = getMsgForSendCount(currentTryCount)
+        mylog("just before send \(jsStr.count) bytes to JS")
+        
+        currentRecord = JSPerformanceRecord.init(beforeCall: CFAbsoluteTimeGetCurrent(), getJsCall: nil, getcallBack: nil, jsStr: jsStr)
         self.webView.evaluateJavaScript(jsStr) { (result, err) in
-            self.mylog("\(self.sendCount) \(jsStr.count) bytes callback, result: \(result), err: \(err)")
-            self.sendCount += 1
-            let maxCount = 20
-            if self.sendCount <= maxCount {
-                self.sendMsgForCount(self.sendCount)
+            self.currentRecord.getcallBack = CFAbsoluteTimeGetCurrent()
+            self.records.append(self.currentRecord)
+            self.mylog("\(jsStr.count) bytes callback, result: \(result.debugDescription), err: \(err.debugDescription)")
+            self.currentTryCount += 1
+            if self.currentTryCount < self.maxTryCount {
+                self.sendMsgToJS()
             } else {
-                self.mylog("has send \(maxCount) times")
+                self.mylog("has send \(self.currentTryCount) times")
+                self.records.forEach({ self.mylog($0.description)})
             }
         }
-
     }
     
+    
     func getMsgForSendCount(_ count: Int) -> String {
-        mylog("before \(#function)")
+//        mylog("before \(#function)")
         let byteCount: Int = Int.init(pow(Double.init(2), Double.init(count)))
-        let msge =   (0..<byteCount).map({ i in
-            return "word"
-        }).reduce("", +)
-        mylog("end \(#function)")
-        return msge
+        let msge = (0..<byteCount).map{ _ in "s"}.reduce("", +)
+//        mylog("end \(#function)")
+        return "echo(\"\(msge)\")"
     }
     
     func mylog(_ str: String) {
-        let logStr = "\(Date.init().timeIntervalSinceReferenceDate) + \(str)"
-        print(logStr)
+        log.verbose(str)
     }
-    
 }
 
 extension ViewController: WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        mylog("\(self.sendCount) call native , message is \(message.name),")
+        currentRecord.getJsCall = CFAbsoluteTimeGetCurrent()
+        mylog("\(self.currentTryCount) call native , message is \(message.name),")
+    }
+}
+
+struct JSPerformanceRecord {
+    var beforeCall: CFAbsoluteTime?
+    var getJsCall: CFAbsoluteTime?
+    var getcallBack: CFAbsoluteTime?
+    var jsStr: String
+    
+    var description: String {
+        return "strCount: \(jsStr.count), toJS:\(getJsCall! - beforeCall!), toatal:\(getcallBack! - beforeCall!)"
     }
 }
