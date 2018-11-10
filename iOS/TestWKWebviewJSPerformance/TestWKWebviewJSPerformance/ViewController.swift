@@ -10,6 +10,8 @@ import UIKit
 import WebKit
 import SnapKit
 import SwiftyBeaver
+import os.signpost
+
 
 class ViewController: UIViewController {
     
@@ -20,7 +22,8 @@ class ViewController: UIViewController {
     let log = SwiftyBeaver.self
     var records = [JSPerformanceRecord]()
     var currentRecord: JSPerformanceRecord!
-    
+    let syslog = OSLog.init(subsystem: "com.tiger.test", category: "sync")
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let console = ConsoleDestination()  // log to Xcode Console
@@ -67,11 +70,16 @@ class ViewController: UIViewController {
     }
     
     func sendMsgToJS() {
+        let signpostID = OSSignpostID(log: syslog)
+
         let jsStr = getMsgForSendCount(currentTryCount)
+        let strCount = jsStr.count
         mylog("just before send \(jsStr.count) bytes to JS")
         
         currentRecord = JSPerformanceRecord.init(beforeCall: CFAbsoluteTimeGetCurrent(), getJsCall: nil, getcallBack: nil, jsStr: jsStr)
+        os_signpost(.begin, log: syslog, name: "runjs", signpostID: signpostID, "%d", strCount)
         self.webView.evaluateJavaScript(jsStr) { (result, err) in
+            os_signpost(.end, log: self.syslog, name: "runjs", signpostID: signpostID, "%d", strCount)
             self.currentRecord.getcallBack = CFAbsoluteTimeGetCurrent()
             self.records.append(self.currentRecord)
             self.mylog("\(jsStr.count) bytes callback, result: \(result.debugDescription), err: \(err.debugDescription)")
