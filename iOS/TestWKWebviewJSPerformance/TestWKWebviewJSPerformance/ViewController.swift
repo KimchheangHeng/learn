@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var webView: WKWebView!
     var button: UIButton!
     var currentTryCount = 1 //当前试图发送的次数
-    let maxTryCount = 20
+    let maxTryCount = 2
     let log = SwiftyBeaver.self
     var records = [JSPerformanceRecord]()
     var currentRecord: JSPerformanceRecord!
@@ -44,11 +44,18 @@ class ViewController: UIViewController {
         }
         button.addTarget(self, action: #selector(type(of: self).testSendMsg), for: .touchUpInside)
         
-        webView = WKWebView.init()
+        let config = WKWebViewConfiguration.init()
+        let usecc = config.userContentController
+        usecc.add(self, name: "testecho")
+        let jsStr = """
+        function echo(str) {console.log(str);window.webkit.messageHandlers.testecho.postMessage("str");}
+        """
+        let userScript = WKUserScript.init(source: jsStr, injectionTime: .atDocumentStart, forMainFrameOnly: true)
+        usecc.addUserScript(userScript)
+
+        webView = WKWebView.init(frame: .zero, configuration: config)
         webView.accessibilityIdentifier = "mywebview abi"
         webView.accessibilityLabel = "mywebviewVV"
-        let usecc = self.webView.configuration.userContentController
-        usecc.add(self, name: "testecho")
         
         view.addSubview(webView)
         webView.snp.makeConstraints({ (make) in
