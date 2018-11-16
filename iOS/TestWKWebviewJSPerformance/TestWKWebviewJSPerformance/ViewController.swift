@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var webView: WKWebView!
     var button: UIButton!
     var currentTryCount = 1 //当前试图发送的次数
-    let maxTryCount = 2
+    let maxTryCount = 19
     let log = SwiftyBeaver.self
     var records = [JSPerformanceRecord]()
     var currentRecord: JSPerformanceRecord!
