@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
-class Test {
+class Test: UIView {
     
     
     //MARK: - non-lazy store
@@ -17,9 +18,15 @@ class Test {
         // 在Init 完成之前被调用，只被调用一次
         print("storeBlock")
         // 这里不能引用self，会报错“Use of unresolved identifier 'self'”
-//        print("\(self)")
+        print("self: \(self)")
+        print("typeofself:\(type(of: self))")
         return 9
     }()
+
+    func method1() -> Int {
+        print("df")
+        return 8
+    }
     
     // MARK: - lazy store
     lazy var lazyStore = 8
@@ -62,10 +69,10 @@ class Test {
         return 8
     }
     
-    init() {
-        print("has init")
-    }
-    
+//    init() {
+//        print("has init")
+//    }
+
     
     func printSelf() {
 //        print("test printed, \(lazyStore), \(lazyCompute), \(store), \(computeStore) \(Test.staticCompute), \(Test.staticLazyCompute) \(storeBlock)")
@@ -75,6 +82,12 @@ class Test {
         print("\(compute), \(lazyCompute)")
         print("\(Test.staticStore)")
         print("\(Test.staticCompute), \(Test.staticLazyCompute)")
+        let me = Test.method1
+        print(me)
+        print(type(of: me))
+        let result = me(self)()
+        print(result)
+
     }
     
     

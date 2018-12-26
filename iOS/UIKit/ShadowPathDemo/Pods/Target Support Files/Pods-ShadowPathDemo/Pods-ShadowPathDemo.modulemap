@@ -1,0 +1,6 @@
+framework module Pods_ShadowPathDemo {
+  umbrella header "Pods-ShadowPathDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
