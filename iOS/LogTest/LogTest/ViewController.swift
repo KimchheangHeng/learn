@@ -18,7 +18,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let str1 = "fasdfa"
         let dic = [1:2, 2:3]
-        os_log(.debug, log: customLog, "dafds, %{public}@, %{private}@", str1, dic)
+        os_log(.info, log: customLog, "dafds, %{public}@, %{private}@", str1, dic)
+        os_log("This is a log message.")
+
     }
 
 
