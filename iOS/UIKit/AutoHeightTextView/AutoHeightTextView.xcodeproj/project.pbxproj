@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		260DA1CF21DA5CAF00368EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DA1CE21DA5CAF00368EFE /* AppDelegate.swift */; };
+		260DA1D121DA5CAF00368EFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DA1D021DA5CAF00368EFE /* ViewController.swift */; };
+		260DA1D421DA5CAF00368EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260DA1D221DA5CAF00368EFE /* Main.storyboard */; };
+		260DA1D621DA5CB000368EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260DA1D521DA5CB000368EFE /* Assets.xcassets */; };
+		260DA1D921DA5CB000368EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260DA1D721DA5CB000368EFE /* LaunchScreen.storyboard */; };
+		260DA1E421DA5CB100368EFE /* AutoHeightTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DA1E321DA5CB100368EFE /* AutoHeightTextViewTests.swift */; };
+		260DA1EF21DA5CB100368EFE /* AutoHeightTextViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DA1EE21DA5CB100368EFE /* AutoHeightTextViewUITests.swift */; };
+		260DA1FD21DA5D9F00368EFE /* HHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DA1FC21DA5D9F00368EFE /* HHTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		260DA1E021DA5CB100368EFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 260DA1C321DA5CAF00368EFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 260DA1CA21DA5CAF00368EFE;
+			remoteInfo = AutoHeightTextView;
+		};
+		260DA1EB21DA5CB100368EFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 260DA1C321DA5CAF00368EFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 260DA1CA21DA5CAF00368EFE;
+			remoteInfo = AutoHeightTextView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		260DA1CB21DA5CAF00368EFE /* AutoHeightTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoHeightTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		260DA1CE21DA5CAF00368EFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		260DA1D021DA5CAF00368EFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		260DA1D321DA5CAF00368EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		260DA1D521DA5CB000368EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		260DA1D821DA5CB000368EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		260DA1DA21DA5CB000368EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260DA1DF21DA5CB100368EFE /* AutoHeightTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoHeightTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		260DA1E321DA5CB100368EFE /* AutoHeightTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightTextViewTests.swift; sourceTree = "<group>"; };
+		260DA1E521DA5CB100368EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260DA1EA21DA5CB100368EFE /* AutoHeightTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoHeightTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		260DA1EE21DA5CB100368EFE /* AutoHeightTextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightTextViewUITests.swift; sourceTree = "<group>"; };
+		260DA1F021DA5CB100368EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260DA1FC21DA5D9F00368EFE /* HHTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		260DA1C821DA5CAF00368EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260DA1DC21DA5CB100368EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260DA1E721DA5CB100368EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		260DA1C221DA5CAF00368EFE = {
+			isa = PBXGroup;
+			children = (
+				260DA1CD21DA5CAF00368EFE /* AutoHeightTextView */,
+				260DA1E221DA5CB100368EFE /* AutoHeightTextViewTests */,
+				260DA1ED21DA5CB100368EFE /* AutoHeightTextViewUITests */,
+				260DA1CC21DA5CAF00368EFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		260DA1CC21DA5CAF00368EFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				260DA1CB21DA5CAF00368EFE /* AutoHeightTextView.app */,
+				260DA1DF21DA5CB100368EFE /* AutoHeightTextViewTests.xctest */,
+				260DA1EA21DA5CB100368EFE /* AutoHeightTextViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		260DA1CD21DA5CAF00368EFE /* AutoHeightTextView */ = {
+			isa = PBXGroup;
+			children = (
+				260DA1CE21DA5CAF00368EFE /* AppDelegate.swift */,
+				260DA1D021DA5CAF00368EFE /* ViewController.swift */,
+				260DA1D221DA5CAF00368EFE /* Main.storyboard */,
+				260DA1FC21DA5D9F00368EFE /* HHTextView.swift */,
+				260DA1D521DA5CB000368EFE /* Assets.xcassets */,
+				260DA1D721DA5CB000368EFE /* LaunchScreen.storyboard */,
+				260DA1DA21DA5CB000368EFE /* Info.plist */,
+			);
+			path = AutoHeightTextView;
+			sourceTree = "<group>";
+		};
+		260DA1E221DA5CB100368EFE /* AutoHeightTextViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				260DA1E321DA5CB100368EFE /* AutoHeightTextViewTests.swift */,
+				260DA1E521DA5CB100368EFE /* Info.plist */,
+			);
+			path = AutoHeightTextViewTests;
+			sourceTree = "<group>";
+		};
+		260DA1ED21DA5CB100368EFE /* AutoHeightTextViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				260DA1EE21DA5CB100368EFE /* AutoHeightTextViewUITests.swift */,
+				260DA1F021DA5CB100368EFE /* Info.plist */,
+			);
+			path = AutoHeightTextViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		260DA1CA21DA5CAF00368EFE /* AutoHeightTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260DA1F321DA5CB100368EFE /* Build configuration list for PBXNativeTarget "AutoHeightTextView" */;
+			buildPhases = (
+				260DA1C721DA5CAF00368EFE /* Sources */,
+				260DA1C821DA5CAF00368EFE /* Frameworks */,
+				260DA1C921DA5CAF00368EFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoHeightTextView;
+			productName = AutoHeightTextView;
+			productReference = 260DA1CB21DA5CAF00368EFE /* AutoHeightTextView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		260DA1DE21DA5CB100368EFE /* AutoHeightTextViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260DA1F621DA5CB100368EFE /* Build configuration list for PBXNativeTarget "AutoHeightTextViewTests" */;
+			buildPhases = (
+				260DA1DB21DA5CB100368EFE /* Sources */,
+				260DA1DC21DA5CB100368EFE /* Frameworks */,
+				260DA1DD21DA5CB100368EFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				260DA1E121DA5CB100368EFE /* PBXTargetDependency */,
+			);
+			name = AutoHeightTextViewTests;
+			productName = AutoHeightTextViewTests;
+			productReference = 260DA1DF21DA5CB100368EFE /* AutoHeightTextViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		260DA1E921DA5CB100368EFE /* AutoHeightTextViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260DA1F921DA5CB100368EFE /* Build configuration list for PBXNativeTarget "AutoHeightTextViewUITests" */;
+			buildPhases = (
+				260DA1E621DA5CB100368EFE /* Sources */,
+				260DA1E721DA5CB100368EFE /* Frameworks */,
+				260DA1E821DA5CB100368EFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				260DA1EC21DA5CB100368EFE /* PBXTargetDependency */,
+			);
+			name = AutoHeightTextViewUITests;
+			productName = AutoHeightTextViewUITests;
+			productReference = 260DA1EA21DA5CB100368EFE /* AutoHeightTextViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		260DA1C321DA5CAF00368EFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = huahuahu;
+				TargetAttributes = {
+					260DA1CA21DA5CAF00368EFE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					260DA1DE21DA5CB100368EFE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 260DA1CA21DA5CAF00368EFE;
+					};
+					260DA1E921DA5CB100368EFE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 260DA1CA21DA5CAF00368EFE;
+					};
+				};
+			};
+			buildConfigurationList = 260DA1C621DA5CAF00368EFE /* Build configuration list for PBXProject "AutoHeightTextView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 260DA1C221DA5CAF00368EFE;
+			productRefGroup = 260DA1CC21DA5CAF00368EFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				260DA1CA21DA5CAF00368EFE /* AutoHeightTextView */,
+				260DA1DE21DA5CB100368EFE /* AutoHeightTextViewTests */,
+				260DA1E921DA5CB100368EFE /* AutoHeightTextViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		260DA1C921DA5CAF00368EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260DA1D921DA5CB000368EFE /* LaunchScreen.storyboard in Resources */,
+				260DA1D621DA5CB000368EFE /* Assets.xcassets in Resources */,
+				260DA1D421DA5CAF00368EFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260DA1DD21DA5CB100368EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260DA1E821DA5CB100368EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		260DA1C721DA5CAF00368EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260DA1D121DA5CAF00368EFE /* ViewController.swift in Sources */,
+				260DA1FD21DA5D9F00368EFE /* HHTextView.swift in Sources */,
+				260DA1CF21DA5CAF00368EFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260DA1DB21DA5CB100368EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260DA1E421DA5CB100368EFE /* AutoHeightTextViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260DA1E621DA5CB100368EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260DA1EF21DA5CB100368EFE /* AutoHeightTextViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		260DA1E121DA5CB100368EFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 260DA1CA21DA5CAF00368EFE /* AutoHeightTextView */;
+			targetProxy = 260DA1E021DA5CB100368EFE /* PBXContainerItemProxy */;
+		};
+		260DA1EC21DA5CB100368EFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 260DA1CA21DA5CAF00368EFE /* AutoHeightTextView */;
+			targetProxy = 260DA1EB21DA5CB100368EFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		260DA1D221DA5CAF00368EFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				260DA1D321DA5CAF00368EFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		260DA1D721DA5CB000368EFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				260DA1D821DA5CB000368EFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		260DA1F121DA5CB100368EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		260DA1F221DA5CB100368EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		260DA1F421DA5CB100368EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoHeightTextView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.AutoHeightTextView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		260DA1F521DA5CB100368EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoHeightTextView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.AutoHeightTextView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		260DA1F721DA5CB100368EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoHeightTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.AutoHeightTextViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoHeightTextView.app/AutoHeightTextView";
+			};
+			name = Debug;
+		};
+		260DA1F821DA5CB100368EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoHeightTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.AutoHeightTextViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoHeightTextView.app/AutoHeightTextView";
+			};
+			name = Release;
+		};
+		260DA1FA21DA5CB100368EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoHeightTextViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.AutoHeightTextViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoHeightTextView;
+			};
+			name = Debug;
+		};
+		260DA1FB21DA5CB100368EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AutoHeightTextViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.AutoHeightTextViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoHeightTextView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		260DA1C621DA5CAF00368EFE /* Build configuration list for PBXProject "AutoHeightTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260DA1F121DA5CB100368EFE /* Debug */,
+				260DA1F221DA5CB100368EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260DA1F321DA5CB100368EFE /* Build configuration list for PBXNativeTarget "AutoHeightTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260DA1F421DA5CB100368EFE /* Debug */,
+				260DA1F521DA5CB100368EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260DA1F621DA5CB100368EFE /* Build configuration list for PBXNativeTarget "AutoHeightTextViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260DA1F721DA5CB100368EFE /* Debug */,
+				260DA1F821DA5CB100368EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260DA1F921DA5CB100368EFE /* Build configuration list for PBXNativeTarget "AutoHeightTextViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260DA1FA21DA5CB100368EFE /* Debug */,
+				260DA1FB21DA5CB100368EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 260DA1C321DA5CAF00368EFE /* Project object */;
+}
