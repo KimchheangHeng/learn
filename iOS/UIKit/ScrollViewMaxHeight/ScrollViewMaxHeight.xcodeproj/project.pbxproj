@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		261BE39421DCA73600D22C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BE39321DCA73600D22C13 /* AppDelegate.swift */; };
+		261BE39621DCA73600D22C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BE39521DCA73600D22C13 /* ViewController.swift */; };
+		261BE39921DCA73600D22C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261BE39721DCA73600D22C13 /* Main.storyboard */; };
+		261BE39B21DCA73800D22C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261BE39A21DCA73800D22C13 /* Assets.xcassets */; };
+		261BE39E21DCA73800D22C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261BE39C21DCA73800D22C13 /* LaunchScreen.storyboard */; };
+		261BE3A921DCA73800D22C13 /* ScrollViewMaxHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BE3A821DCA73800D22C13 /* ScrollViewMaxHeightTests.swift */; };
+		261BE3B421DCA73800D22C13 /* ScrollViewMaxHeightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BE3B321DCA73800D22C13 /* ScrollViewMaxHeightUITests.swift */; };
+		261BE3C221DCB2B000D22C13 /* THScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BE3C121DCB2B000D22C13 /* THScrollView.swift */; };
+		261BE3C421DCB56E00D22C13 /* THTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BE3C321DCB56E00D22C13 /* THTableView.swift */; };
+		9BA2055E8CCA09161272E77A /* Pods_ScrollViewMaxHeightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BD523169319478E6CF601 /* Pods_ScrollViewMaxHeightTests.framework */; };
+		A1C5CD8E8212211BB5025132 /* Pods_ScrollViewMaxHeight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD6B7C0F5DA2CF7E6CE073C /* Pods_ScrollViewMaxHeight.framework */; };
+		C250BFD4D44CC8D0E8D797F3 /* Pods_ScrollViewMaxHeightUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178FA87DBA65CC6C03C523AF /* Pods_ScrollViewMaxHeightUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		261BE3A521DCA73800D22C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 261BE38821DCA73600D22C13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 261BE38F21DCA73600D22C13;
+			remoteInfo = ScrollViewMaxHeight;
+		};
+		261BE3B021DCA73800D22C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 261BE38821DCA73600D22C13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 261BE38F21DCA73600D22C13;
+			remoteInfo = ScrollViewMaxHeight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0319FF46E8D0E9EE88B3EF4C /* Pods-ScrollViewMaxHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewMaxHeight.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewMaxHeight/Pods-ScrollViewMaxHeight.release.xcconfig"; sourceTree = "<group>"; };
+		178FA87DBA65CC6C03C523AF /* Pods_ScrollViewMaxHeightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewMaxHeightUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1808A8033E45E29CD2961B0B /* Pods-ScrollViewMaxHeightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewMaxHeightUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewMaxHeightUITests/Pods-ScrollViewMaxHeightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1DD6B7C0F5DA2CF7E6CE073C /* Pods_ScrollViewMaxHeight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewMaxHeight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2609FE92518861F0D3618530 /* Pods-ScrollViewMaxHeightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewMaxHeightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewMaxHeightTests/Pods-ScrollViewMaxHeightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		261BE39021DCA73600D22C13 /* ScrollViewMaxHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewMaxHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		261BE39321DCA73600D22C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		261BE39521DCA73600D22C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		261BE39821DCA73600D22C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		261BE39A21DCA73800D22C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		261BE39D21DCA73800D22C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		261BE39F21DCA73800D22C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261BE3A421DCA73800D22C13 /* ScrollViewMaxHeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewMaxHeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		261BE3A821DCA73800D22C13 /* ScrollViewMaxHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewMaxHeightTests.swift; sourceTree = "<group>"; };
+		261BE3AA21DCA73800D22C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261BE3AF21DCA73800D22C13 /* ScrollViewMaxHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewMaxHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		261BE3B321DCA73800D22C13 /* ScrollViewMaxHeightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewMaxHeightUITests.swift; sourceTree = "<group>"; };
+		261BE3B521DCA73800D22C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261BE3C121DCB2B000D22C13 /* THScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THScrollView.swift; sourceTree = "<group>"; };
+		261BE3C321DCB56E00D22C13 /* THTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THTableView.swift; sourceTree = "<group>"; };
+		4A5C1CE127D7D73E6E499276 /* Pods-ScrollViewMaxHeightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewMaxHeightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewMaxHeightTests/Pods-ScrollViewMaxHeightTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D66EE7A3067B314724D4AE2 /* Pods-ScrollViewMaxHeightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewMaxHeightUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewMaxHeightUITests/Pods-ScrollViewMaxHeightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B55BD523169319478E6CF601 /* Pods_ScrollViewMaxHeightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewMaxHeightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF98F365572C7E6935D09C5D /* Pods-ScrollViewMaxHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewMaxHeight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewMaxHeight/Pods-ScrollViewMaxHeight.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		261BE38D21DCA73600D22C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C5CD8E8212211BB5025132 /* Pods_ScrollViewMaxHeight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BE3A121DCA73800D22C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA2055E8CCA09161272E77A /* Pods_ScrollViewMaxHeightTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BE3AC21DCA73800D22C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C250BFD4D44CC8D0E8D797F3 /* Pods_ScrollViewMaxHeightUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		261BE38721DCA73600D22C13 = {
+			isa = PBXGroup;
+			children = (
+				261BE39221DCA73600D22C13 /* ScrollViewMaxHeight */,
+				261BE3A721DCA73800D22C13 /* ScrollViewMaxHeightTests */,
+				261BE3B221DCA73800D22C13 /* ScrollViewMaxHeightUITests */,
+				261BE39121DCA73600D22C13 /* Products */,
+				52D3DBFC3E74DF339FAAF46C /* Pods */,
+				B07E285119BF06874AB63135 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		261BE39121DCA73600D22C13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				261BE39021DCA73600D22C13 /* ScrollViewMaxHeight.app */,
+				261BE3A421DCA73800D22C13 /* ScrollViewMaxHeightTests.xctest */,
+				261BE3AF21DCA73800D22C13 /* ScrollViewMaxHeightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		261BE39221DCA73600D22C13 /* ScrollViewMaxHeight */ = {
+			isa = PBXGroup;
+			children = (
+				261BE39321DCA73600D22C13 /* AppDelegate.swift */,
+				261BE39521DCA73600D22C13 /* ViewController.swift */,
+				261BE3C321DCB56E00D22C13 /* THTableView.swift */,
+				261BE3C121DCB2B000D22C13 /* THScrollView.swift */,
+				261BE39721DCA73600D22C13 /* Main.storyboard */,
+				261BE39A21DCA73800D22C13 /* Assets.xcassets */,
+				261BE39C21DCA73800D22C13 /* LaunchScreen.storyboard */,
+				261BE39F21DCA73800D22C13 /* Info.plist */,
+			);
+			path = ScrollViewMaxHeight;
+			sourceTree = "<group>";
+		};
+		261BE3A721DCA73800D22C13 /* ScrollViewMaxHeightTests */ = {
+			isa = PBXGroup;
+			children = (
+				261BE3A821DCA73800D22C13 /* ScrollViewMaxHeightTests.swift */,
+				261BE3AA21DCA73800D22C13 /* Info.plist */,
+			);
+			path = ScrollViewMaxHeightTests;
+			sourceTree = "<group>";
+		};
+		261BE3B221DCA73800D22C13 /* ScrollViewMaxHeightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				261BE3B321DCA73800D22C13 /* ScrollViewMaxHeightUITests.swift */,
+				261BE3B521DCA73800D22C13 /* Info.plist */,
+			);
+			path = ScrollViewMaxHeightUITests;
+			sourceTree = "<group>";
+		};
+		52D3DBFC3E74DF339FAAF46C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF98F365572C7E6935D09C5D /* Pods-ScrollViewMaxHeight.debug.xcconfig */,
+				0319FF46E8D0E9EE88B3EF4C /* Pods-ScrollViewMaxHeight.release.xcconfig */,
+				2609FE92518861F0D3618530 /* Pods-ScrollViewMaxHeightTests.debug.xcconfig */,
+				4A5C1CE127D7D73E6E499276 /* Pods-ScrollViewMaxHeightTests.release.xcconfig */,
+				4D66EE7A3067B314724D4AE2 /* Pods-ScrollViewMaxHeightUITests.debug.xcconfig */,
+				1808A8033E45E29CD2961B0B /* Pods-ScrollViewMaxHeightUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B07E285119BF06874AB63135 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DD6B7C0F5DA2CF7E6CE073C /* Pods_ScrollViewMaxHeight.framework */,
+				B55BD523169319478E6CF601 /* Pods_ScrollViewMaxHeightTests.framework */,
+				178FA87DBA65CC6C03C523AF /* Pods_ScrollViewMaxHeightUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		261BE38F21DCA73600D22C13 /* ScrollViewMaxHeight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261BE3B821DCA73800D22C13 /* Build configuration list for PBXNativeTarget "ScrollViewMaxHeight" */;
+			buildPhases = (
+				C3233A053FB92A55697129A4 /* [CP] Check Pods Manifest.lock */,
+				261BE38C21DCA73600D22C13 /* Sources */,
+				261BE38D21DCA73600D22C13 /* Frameworks */,
+				261BE38E21DCA73600D22C13 /* Resources */,
+				9BEAFB1D0C2EF2649BD98517 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollViewMaxHeight;
+			productName = ScrollViewMaxHeight;
+			productReference = 261BE39021DCA73600D22C13 /* ScrollViewMaxHeight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		261BE3A321DCA73800D22C13 /* ScrollViewMaxHeightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261BE3BB21DCA73800D22C13 /* Build configuration list for PBXNativeTarget "ScrollViewMaxHeightTests" */;
+			buildPhases = (
+				744627032D36E7156AFA3027 /* [CP] Check Pods Manifest.lock */,
+				261BE3A021DCA73800D22C13 /* Sources */,
+				261BE3A121DCA73800D22C13 /* Frameworks */,
+				261BE3A221DCA73800D22C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				261BE3A621DCA73800D22C13 /* PBXTargetDependency */,
+			);
+			name = ScrollViewMaxHeightTests;
+			productName = ScrollViewMaxHeightTests;
+			productReference = 261BE3A421DCA73800D22C13 /* ScrollViewMaxHeightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		261BE3AE21DCA73800D22C13 /* ScrollViewMaxHeightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261BE3BE21DCA73800D22C13 /* Build configuration list for PBXNativeTarget "ScrollViewMaxHeightUITests" */;
+			buildPhases = (
+				BC7310D97228CF0FA0F71236 /* [CP] Check Pods Manifest.lock */,
+				261BE3AB21DCA73800D22C13 /* Sources */,
+				261BE3AC21DCA73800D22C13 /* Frameworks */,
+				261BE3AD21DCA73800D22C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				261BE3B121DCA73800D22C13 /* PBXTargetDependency */,
+			);
+			name = ScrollViewMaxHeightUITests;
+			productName = ScrollViewMaxHeightUITests;
+			productReference = 261BE3AF21DCA73800D22C13 /* ScrollViewMaxHeightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		261BE38821DCA73600D22C13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "郭腾虎";
+				TargetAttributes = {
+					261BE38F21DCA73600D22C13 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					261BE3A321DCA73800D22C13 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 261BE38F21DCA73600D22C13;
+					};
+					261BE3AE21DCA73800D22C13 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 261BE38F21DCA73600D22C13;
+					};
+				};
+			};
+			buildConfigurationList = 261BE38B21DCA73600D22C13 /* Build configuration list for PBXProject "ScrollViewMaxHeight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 261BE38721DCA73600D22C13;
+			productRefGroup = 261BE39121DCA73600D22C13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				261BE38F21DCA73600D22C13 /* ScrollViewMaxHeight */,
+				261BE3A321DCA73800D22C13 /* ScrollViewMaxHeightTests */,
+				261BE3AE21DCA73800D22C13 /* ScrollViewMaxHeightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		261BE38E21DCA73600D22C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261BE39E21DCA73800D22C13 /* LaunchScreen.storyboard in Resources */,
+				261BE39B21DCA73800D22C13 /* Assets.xcassets in Resources */,
+				261BE39921DCA73600D22C13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BE3A221DCA73800D22C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BE3AD21DCA73800D22C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		744627032D36E7156AFA3027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollViewMaxHeightTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BEAFB1D0C2EF2649BD98517 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewMaxHeight/Pods-ScrollViewMaxHeight-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewMaxHeight/Pods-ScrollViewMaxHeight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7310D97228CF0FA0F71236 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollViewMaxHeightUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3233A053FB92A55697129A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollViewMaxHeight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		261BE38C21DCA73600D22C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261BE39621DCA73600D22C13 /* ViewController.swift in Sources */,
+				261BE3C221DCB2B000D22C13 /* THScrollView.swift in Sources */,
+				261BE39421DCA73600D22C13 /* AppDelegate.swift in Sources */,
+				261BE3C421DCB56E00D22C13 /* THTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BE3A021DCA73800D22C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261BE3A921DCA73800D22C13 /* ScrollViewMaxHeightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		261BE3AB21DCA73800D22C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261BE3B421DCA73800D22C13 /* ScrollViewMaxHeightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		261BE3A621DCA73800D22C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 261BE38F21DCA73600D22C13 /* ScrollViewMaxHeight */;
+			targetProxy = 261BE3A521DCA73800D22C13 /* PBXContainerItemProxy */;
+		};
+		261BE3B121DCA73800D22C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 261BE38F21DCA73600D22C13 /* ScrollViewMaxHeight */;
+			targetProxy = 261BE3B021DCA73800D22C13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		261BE39721DCA73600D22C13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261BE39821DCA73600D22C13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		261BE39C21DCA73800D22C13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261BE39D21DCA73800D22C13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		261BE3B621DCA73800D22C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		261BE3B721DCA73800D22C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		261BE3B921DCA73800D22C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF98F365572C7E6935D09C5D /* Pods-ScrollViewMaxHeight.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollViewMaxHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.ScrollViewMaxHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		261BE3BA21DCA73800D22C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0319FF46E8D0E9EE88B3EF4C /* Pods-ScrollViewMaxHeight.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollViewMaxHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.ScrollViewMaxHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		261BE3BC21DCA73800D22C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2609FE92518861F0D3618530 /* Pods-ScrollViewMaxHeightTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollViewMaxHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.ScrollViewMaxHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollViewMaxHeight.app/ScrollViewMaxHeight";
+			};
+			name = Debug;
+		};
+		261BE3BD21DCA73800D22C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5C1CE127D7D73E6E499276 /* Pods-ScrollViewMaxHeightTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollViewMaxHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.ScrollViewMaxHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollViewMaxHeight.app/ScrollViewMaxHeight";
+			};
+			name = Release;
+		};
+		261BE3BF21DCA73800D22C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D66EE7A3067B314724D4AE2 /* Pods-ScrollViewMaxHeightUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollViewMaxHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.ScrollViewMaxHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScrollViewMaxHeight;
+			};
+			name = Debug;
+		};
+		261BE3C021DCA73800D22C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1808A8033E45E29CD2961B0B /* Pods-ScrollViewMaxHeightUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScrollViewMaxHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.shenzhen.ScrollViewMaxHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScrollViewMaxHeight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		261BE38B21DCA73600D22C13 /* Build configuration list for PBXProject "ScrollViewMaxHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261BE3B621DCA73800D22C13 /* Debug */,
+				261BE3B721DCA73800D22C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261BE3B821DCA73800D22C13 /* Build configuration list for PBXNativeTarget "ScrollViewMaxHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261BE3B921DCA73800D22C13 /* Debug */,
+				261BE3BA21DCA73800D22C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261BE3BB21DCA73800D22C13 /* Build configuration list for PBXNativeTarget "ScrollViewMaxHeightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261BE3BC21DCA73800D22C13 /* Debug */,
+				261BE3BD21DCA73800D22C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261BE3BE21DCA73800D22C13 /* Build configuration list for PBXNativeTarget "ScrollViewMaxHeightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261BE3BF21DCA73800D22C13 /* Debug */,
+				261BE3C021DCA73800D22C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 261BE38821DCA73600D22C13 /* Project object */;
+}
